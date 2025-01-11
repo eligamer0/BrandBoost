@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+}
+
+.header {
+    background-color: black;
+    height: 40rem;
+    width: 100%;
+    
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.img-logo {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: 80px; /* Ajusta el tamaño del logo */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    perspective: 1000px; /* Añadir perspectiva */
+    padding: 1rem;
+}
+
+.logo {
+    text-decoration: none; /* Elimina la decoración del enlace */
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px;
+    height: 80px;
+    margin-right: 10px;
+    animation: entrada-logo 3.5s ease; /* Aplica la animación solo al logo */
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: baseline; /* Alinea los textos en la línea base */
+}
+
+.logo-text1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    color: #FFDD00; 
+    animation: entrada-text1 3s ease; /* Aplica la animación solo al texto */
+}
+
+.logo-text2 {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    color: #FFDD00; 
+    animation: entrada-text2 4s ease; /* Aplica la animación solo al texto */
+}
+
+.logo-subtext {
+    font-size: 60px;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    margin: 0;
+    text-decoration: none;
+    color: #FFDD00; /* Asegúrate de que el texto sea visible */
+    animation: entrada-subtext 4.5s ease; /* Aplica la animación solo al texto */
+}
+
+@keyframes entrada-logo {
+    0% {
+        transform: translate(-600px, 0px);
+        opacity: 0;
+        height: 20rem;
+        width: 20rem;
+    }
+    50% {
+        transform: translate(250px, 0);
+        width: 120px;
+        height: 80px;
+    }
+    75% {
+        transform: translate(250px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+@keyframes entrada-text1 {
+    0% {
+        opacity: 0; /* Comienza invisible */
+    }
+    75% {
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        opacity: 1; /* Termina invisible nuevamente */
+    }
+}
+
+@keyframes entrada-text2 {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    75% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes entrada-subtext {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.quienes-somos {
+    padding-top: 40px; /* Añade espacio arriba para la línea */
+    
+}
+
+.titulo {
+    font-weight: 100;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block; /* Asegura que el pseudo-elemento se posicione correctamente */
+    padding-left: 100px; /* Añade espacio a la izquierda para la línea */
+   
+}
+
+.titulo::before {
+    content: "";
+    position: absolute;
+    top: 60%; /* Centra verticalmente la línea */
+    left: 10%; /* Coloca la línea al lado izquierdo del título */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    width: 60px; /* Ajusta el ancho de la línea según sea necesario */
+    height: 1px; /* Ajusta el grosor de la línea según sea necesario */
+    background-color: #000;
+}
+
+.texto {
+    font-size: 40px;
+    color: #FFDD00;
+    
+}
