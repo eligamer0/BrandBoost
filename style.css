@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Roboto", serif;
 }
 
 .header {
@@ -25,14 +24,19 @@ body {
     object-fit: contain; /* Mantiene la proporción de la imagen */
 }
 
+.menu {
+    color: #FFDD00;
+;
+}
+.menu-item {
+    color: #FFDD00;
+    
+}
 
 .header-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    text-decoration: none;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -53,12 +57,13 @@ body {
     width: 120px;
     height: 80px;
     margin-right: 10px;
-    animation: entrada-logo 3.5s ease; /* Aplica la animación solo al logo */
+    animation: entrada-logo 3.5s ease; /* Aplica la animación solo al logo */  
 }
 
 .logo-text-container {
     display: flex;
     align-items: baseline; /* Alinea los textos en la línea base */
+    font-family: "Poppins", serif;
 }
 
 .logo-text1 {
@@ -80,9 +85,10 @@ body {
 }
 
 .logo-subtext {
-    font-size: 60px;
-    font-family: "Roboto", serif;
-    font-weight: 100;
+    font-size: 59px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    text-transform: uppercase;
     margin: 0;
     text-decoration: none;
     color: #FFDD00; /* Asegúrate de que el texto sea visible */
@@ -157,12 +163,19 @@ body {
 
 .quienes-somos {
     padding-top: 40px; /* Añade espacio arriba para la línea */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem;
+    grid-gap: 20px;
     
 }
 
-.titulo {
+.titulo { 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 13px;
     position: relative;
     margin-bottom: 20px;
     display: inline-block; /* Asegura que el pseudo-elemento se posicione correctamente */
@@ -177,12 +190,64 @@ body {
     left: 10%; /* Coloca la línea al lado izquierdo del título */
     transform: translateY(-50%); /* Ajusta la posición vertical */
     width: 60px; /* Ajusta el ancho de la línea según sea necesario */
-    height: 1px; /* Ajusta el grosor de la línea según sea necesario */
+    height: 2px; /* Ajusta el grosor de la línea según sea necesario */
     background-color: #000;
 }
 
 .texto {
     font-size: 40px;
     color: #FFDD00;
-    
+    padding: 0 20px 0 20px;
+    margin: 0;
+}
+.texto1 {
+    padding: 0 20px 0 20px;
+}
+
+@media (min-width: 1000px) {
+   .quienes-somos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 20rem; /* Reduce la altura */
+        padding: 1rem; /* Ajusta el espacio interno */
+    }
+
+    .header-logo {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        padding: 1rem; /* Reduce el espacio de los bordes */
+    }
+
+    .img-logo {
+        width: 120px; /* Tamaño reducido para el logo */
+        height: auto; /* Mantiene proporción */
+    }
+
+    .logo-text1,
+    .logo-text2 {
+        font-size: 50px; /* Reduce el tamaño del texto principal */
+        margin: 0.5rem 0; /* Ajusta los márgenes */
+    }
+
+    .logo-subtext {
+        font-size: 24px; /* Reduce el tamaño del subtítulo */
+        margin: 0.3rem 0; /* Ajusta márgenes */
+    }
+
+    .header-container {
+        padding: 0.5rem; /* Menor espacio interno */
+    }
+
+    .menu {
+        font-size: 16px; /* Tamaño reducido para las opciones del menú */
+    }
+
+    .menu-item {
+        font-size: 16px; /* Coincide con el menú */
+        margin: 0.5rem 0; /* Espacio entre ítems */
+    }
 }
