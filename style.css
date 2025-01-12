@@ -164,7 +164,7 @@ body {
 .quienes-somos {
     padding-top: 40px; /* Añade espacio arriba para la línea */
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 5rem;
     grid-gap: 20px;
     
@@ -204,12 +204,6 @@ body {
     padding: 0 20px 0 20px;
 }
 
-@media (min-width: 1000px) {
-   .quienes-somos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-   }
-}
 
 @media (max-width: 768px) {
     .header {
@@ -250,4 +244,10 @@ body {
         font-size: 16px; /* Coincide con el menú */
         margin: 0.5rem 0; /* Espacio entre ítems */
     }
+
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5rem;
+   }
 }
