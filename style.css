@@ -1,171 +1,74 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    overflow: auto;
+}
+h4 {
+    font-size: 40px;
+    color: #FFDD00;
+    margin: 0;
+}
+span {
+    font-size: 13px;
+    color: #000; 
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .header {
-    background-color: black;
-    height: 40rem;
-    width: 100%;
     
+    position: relative;
+    height: 100vh; /* Ajusta la altura del header según tus necesidades */
+    width: 100%;
 }
+.footer {
+    margin-top: 80px;
+    background-color: #000;
+    color: #FFDD00;
+    padding: 1rem;
+}
+
+.fondo-video {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1; /* Establece un z-index menor que el del h1 */
+  }
 
 .header-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .img-logo {
     width: 200px; /* Ajusta el tamaño del logo */
     height: 80px; /* Ajusta el tamaño del logo */
+    z-index: 2;
     object-fit: contain; /* Mantiene la proporción de la imagen */
-}
 
+}
 .menu {
+    z-index: 2;
     color: #FFDD00;
-;
-}
-.menu-item {
-    color: #FFDD00;
-    
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    perspective: 1000px; /* Añadir perspectiva */
-    padding: 1rem;
-}
-
-.logo {
-    text-decoration: none; /* Elimina la decoración del enlace */
-}
-
-.logo-content {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    width: 120px;
-    height: 80px;
-    margin-right: 10px;
-    animation: entrada-logo 3.5s ease; /* Aplica la animación solo al logo */  
-}
-
-.logo-text-container {
-    display: flex;
-    align-items: baseline; /* Alinea los textos en la línea base */
-    font-family: "Poppins", serif;
-}
-
-.logo-text1 {
-    font-size: 100px;
-    font-weight: bold;
-    margin: 0;
-    text-decoration: none;
-    color: #FFDD00; 
-    animation: entrada-text1 3s ease; /* Aplica la animación solo al texto */
-}
-
-.logo-text2 {
-    font-size: 100px;
-    font-weight: bold;
-    margin: 0;
-    text-decoration: none;
-    color: #FFDD00; 
-    animation: entrada-text2 4s ease; /* Aplica la animación solo al texto */
-}
-
-.logo-subtext {
-    font-size: 59px;
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0;
-    text-decoration: none;
-    color: #FFDD00; /* Asegúrate de que el texto sea visible */
-    animation: entrada-subtext 4.5s ease; /* Aplica la animación solo al texto */
-}
-
-@keyframes entrada-logo {
-    0% {
-        transform: translate(-600px, 0px);
-        opacity: 0;
-        height: 20rem;
-        width: 20rem;
-    }
-    50% {
-        transform: translate(250px, 0);
-        width: 120px;
-        height: 80px;
-    }
-    75% {
-        transform: translate(250px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-
-@keyframes entrada-text1 {
-    0% {
-        opacity: 0; /* Comienza invisible */
-    }
-    75% {
-        opacity: 0; /* Comienza invisible */
-    }
-    100% {
-        opacity: 1; /* Termina invisible nuevamente */
-    }
-}
-
-@keyframes entrada-text2 {
-    0% {
-        transform: translate(0, 100px);
-        opacity: 0;
-    }
-    50% {
-        transform: translate(0, 100px);
-        opacity: 0;
-    }
-    75% {
-        transform: translate(0, 100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0, 0);
-        opacity: 1;
-
-    }
-}
-
-@keyframes entrada-subtext {
-    0% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .quienes-somos {
-    padding-top: 40px; /* Añade espacio arriba para la línea */
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5rem;
+    padding: 2rem;
     grid-gap: 20px;
     
 }
@@ -173,7 +76,7 @@ body {
 .titulo { 
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: #FFDD00;
     font-weight: 100;
     font-size: 13px;
     position: relative;
@@ -202,6 +105,27 @@ body {
 }
 .texto1 {
     padding: 0 20px 0 20px;
+    line-height: 2; /* Aumenta el espacio entre líneas */
+}
+
+.servicios {
+    text-align: center;
+    padding: 10px;
+}
+
+.servicios-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 20px 90px;
+}
+.servicios-contenido-item {
+    padding: 20px ;
+    border: 1px solid #FFDD00;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
 }
 
 
