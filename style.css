@@ -218,7 +218,7 @@ span {
 @media (max-width: 768px) {
     .header {
         height: 20rem; /* Reduce la altura */
-        padding: 1rem; /* Ajusta el espacio interno */
+        padding: auto; /* Ajusta el espacio interno */
     }
 
     .header-logo {
