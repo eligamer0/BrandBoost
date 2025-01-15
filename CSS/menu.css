@@ -111,3 +111,16 @@ a {
 .main-menu li a span {
     transition: color 0.8s ease; /* Ajusta la duración y el tipo de transición según tus necesidades */
 }
+
+@media (max-width: 768px) {
+    .header-logo {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        padding: 1rem; /* Reduce el espacio de los bordes */
+        padding-bottom: 2rem; /* Reduce el espacio de los bordes */
+    }
+
+    .menu {
+        display: none;
+    }
+    
+}
