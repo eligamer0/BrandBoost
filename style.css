@@ -4,6 +4,16 @@ body {
     padding: 0;
     text-decoration: none;
     overflow: auto;
+    font-family: "Poppins", serif;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 25px;
+    color: #FFDD00;
+    margin: 0;
+    text-decoration: none;
 }
 h4 {
     font-size: 40px;
@@ -137,7 +147,7 @@ span {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFDD00;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 13px;
     position: relative;
     margin-bottom: 20px;
@@ -178,6 +188,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding: 20px 90px;
+    margin-bottom: 5rem;
 }
 .servicios-contenido-item {
     padding: 20px ;
@@ -186,6 +197,12 @@ span {
     background-color: #fff;
     color: #000;
     text-align: center;
+}
+.servicios-texto p {
+    font-size: 15px;
+    color: #807d7d;
+    padding: 10px;
+    line-height: 2;
 }
 
 .boton {
@@ -215,6 +232,20 @@ span {
     transition: 0.5s;
 }
 
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    grid-gap: 20px;
+}
+.nosotros-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Media queries */
 @media (max-width: 768px) {
     .header {
         height: 20rem; /* Reduce la altura */
