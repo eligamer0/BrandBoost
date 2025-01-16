@@ -9,6 +9,13 @@ body {
 a {
     text-decoration: none;
 }
+h1 {
+    font-size: 50px;
+    color: #FFDD00;
+    margin: 0;
+    text-decoration: none;
+}
+
 h2 {
     font-size: 25px;
     color: #FFDD00;
@@ -244,6 +251,34 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.imagen_contacto {
+    background-image: url('LOGO/PNG/image.png');
+}
+
+/* .webp .imagen_contacto {
+    background-image: url('LOGO/PNG/programacion-42-portada-noticia-2560x950-1-1600x593.jpg');
+} */
+
+.imagen_contacto {
+    
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+.imagen_contacto p {
+    font-size: 15px;
+    color: #fff;
+    padding: 20px;
+}
+.imagen_contacto span {
+    font-size: 15px;
+    color: #fff;
+    padding: 0;
 }
 
 /* Media queries */
