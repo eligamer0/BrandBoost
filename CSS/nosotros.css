@@ -250,3 +250,96 @@ h4 {
     color: #FFDD00;
     padding: 1rem 3rem 3rem;
 }
+
+@media (max-width: 768px) {
+    .header-logo {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        padding: 1rem; /* Reduce el espacio de los bordes */
+    }
+
+    .img-logo {
+        width: 120px; /* Tamaño reducido para el logo */
+        height: auto; /* Mantiene proporción */
+    }
+
+    .logo-text1,
+    .logo-text2 {
+        font-size: 50px; /* Reduce el tamaño del texto principal */
+        margin: 0.5rem 0; /* Ajusta los márgenes */
+    }
+
+    .logo-subtext {
+        font-size: 24px; /* Reduce el tamaño del subtítulo */
+        margin: 0.3rem 0; /* Ajusta márgenes */
+    }
+
+    .header-container {
+        padding: 0.5rem; /* Menor espacio interno */
+    }
+
+    .menu {
+        font-size: 16px; /* Tamaño reducido para las opciones del menú */
+    }
+
+    .menu-item {
+        font-size: 16px; /* Coincide con el menú */
+        margin: 0.5rem 0; /* Espacio entre ítems */
+    }
+
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+   }
+
+   .elementos {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+   }
+
+   .elemento-titulo {
+        padding: 10px;
+        margin: 10px;
+   }
+   .elemento-nosotros {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+   }
+   .elemento-titulo-h2 {
+        padding: 0;
+        margin: 0;
+   }
+   .elemento-contenido {
+        display: block;
+        margin: 0;
+        margin-bottom: 2rem;
+   }
+   
+   .quienes-somos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+    .servicios-contenido {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 25px 20px;
+    }
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .boton-contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+}
