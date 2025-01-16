@@ -41,7 +41,7 @@ span {
     width: 100%;
 } 
 .footer {
-    margin-top: 80px;
+    margin-top: 0px;
     background-color: #000;
     color: #FFDD00;
     padding: 1rem 3rem 3rem;
@@ -256,11 +256,6 @@ span {
 .imagen_contacto {
     background-image: url('LOGO/PNG/image.png');
 }
-
-/* .webp .imagen_contacto {
-    background-image: url('LOGO/PNG/programacion-42-portada-noticia-2560x950-1-1600x593.jpg');
-} */
-
 .imagen_contacto {
     
     background-position: center center;
