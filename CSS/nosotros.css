@@ -6,10 +6,25 @@ body {
     overflow: auto;
     font-family: "Poppins", serif;
 }
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
 h4 {
     font-size: 40px;
     color: #FFDD00;
     margin: 0;
+    
+}
+p {
+    font-size: 13px;
+    line-height: 2;
+    color: #888;
 }
 
 .header-logo {
@@ -147,7 +162,8 @@ h4 {
     font-size: 40px;
     color: #FFDD00;
     padding: 0 20px 0 20px;
-    margin: 0;
+    margin: 0 20px;
+    letter-spacing: 0.0em;
 }
 .texto1 {
     padding: 0 20px 0 20px;

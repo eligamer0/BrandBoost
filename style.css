@@ -22,6 +22,7 @@ h2 {
     margin: 0;
     text-decoration: none;
 }
+
 h4 {
     font-size: 40px;
     color: #FFDD00;
@@ -211,6 +212,10 @@ span {
     color: #807d7d;
     padding: 10px;
     line-height: 2;
+}
+.titulo-servicio {
+    width: auto;
+    height: 50px;
 }
 
 .boton {
