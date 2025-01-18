@@ -6,41 +6,20 @@ body {
     overflow: auto;
     font-family: "Poppins", serif;
 }
-a {
-    text-decoration: none;
-}
-h1 {
-    font-size: 50px;
-    color: #FFDD00;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
+
+
+h3 {
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 300;
 }
 
-h2 {
-    font-size: 25px;
-    color: #FFDD00;
-    margin: 0;
-    text-decoration: none;
-}
-
-h4 {
-    font-size: 40px;
-    color: #FFDD00;
-    margin: 0;
-}
-span {
-    font-size: 13px;
-    color: #000; 
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
 
 .header-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 3rem 3rem;
+    padding: 1rem 3rem 0 3rem;
     align-items: center;
     position: relative;
     background-color: #000;
@@ -103,7 +82,7 @@ span {
     transform: rotateY(360deg);
 }
 .menu:nth-child(2) {
-    --bg-color:  #FFDD00; /*linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7); */
+    --bg-color:  #FFDD00;
 } 
 
 .servicio-titulo {
@@ -111,6 +90,7 @@ span {
     height: 280px;
     background-color: #000;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -119,39 +99,29 @@ span {
     text-align: center;
     padding: 20px;
 }
+.titulo1 {
+    color: #FFDD00;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+.titulo2 {
+    color: #fff;
+    position: relative;
+    top: -45px;
+}
 
-.servicios-contenido {
+.seccion {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding: 20px 90px;
-    margin-bottom: 5rem;
+    padding: 80px 150px 80px 120px;
+    grid-template-columns: repeat(2, 55% 45%);
+    gap: 40px;
 }
-.servicios-contenido-item {
-    padding: 20px ;
-    /* border: 1px solid #FFDD00;
-    border-radius: 10px; */
-    background-color: #fff;
-    color: #000;
-    text-align: left;
-}
-.servicios-contenido-item:hover {
-    background-color: #f8f8f8;
-}
-.servicios-texto p {
-    text-align: left;
-    font-size: 14px;
-    color: #807d7d;
-    padding: 10px;
-    line-height: 2;
-}
-.titulo-servicio {
-    width: auto;
-    height: 50px;
-    padding: 10px;
-    text-align: left;
-}
-
+.seccion-img img{
+    background-color: #000;
+    width: 400px;
+    height: 400px;
+} 
 .boton {
     background-color: #000;
     color: #fff;
@@ -166,7 +136,6 @@ span {
 }
 .boton-contenido {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding: 20px 10px;
 }
@@ -181,44 +150,92 @@ span {
     transition: 0.5s;
 }
 
-.nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-    grid-gap: 20px;
-}
 .nosotros-boton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0 0;
 }
 
-.imagen_contacto {
-    background-image: url('../LOGO/PNG/image.png');
+/* aquí va el carrucel  */
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden; /* Oculta el contenido que está fuera del área visible */
+    border-radius: 10px;
+    margin-left: 100px;
+    /* position: relative;
+    left: 100px; */
 }
-.imagen_contacto {
-    
-    background-position: center center;
-    background-size: cover;
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Asegúrate de que ocupe el espacio completo */
+    will-change: transform; /* Mejora el rendimiento */
+}
+
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0; /* Impide que las diapositivas cambien de tamaño */
+    width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-slide .content {
+    max-width: 55%;
+}
+
+.carousel-slide h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.carousel-slide p {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Botones de control */
+.carousel-controls {
+    display: flex;
+    padding-left: 10px;
+
+}
+
+.carousel-button {
+    background-color: #fff;
+    border: none;
+}
+
+/* cierre  */
+
+.ventajas {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px;
+    margin-top: 50px;
+}
+.ventajas-titulo {
+    color: #fff;
+}
+.ventajas-texto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 35px;
-}
-.imagen_contacto p {
-    font-size: 15px;
     color: #fff;
-    padding: 20px;
-}
-.imagen_contacto span {
-    font-size: 15px;
-    color: #fff;
-    padding: 0;
-}
-.footer {
-    margin-top: 0px;
-    background-color: #000;
-    color: #FFDD00;
-    padding: 1rem 3rem 3rem;
 }
