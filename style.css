@@ -181,12 +181,12 @@ span {
 .servicios-contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 0;
     padding: 20px 90px;
     margin-bottom: 5rem;
 }
 .servicios-contenido-item {
-    padding: 20px ;
+    padding: 50px ;
     /* border: 1px solid #FFDD00;
     border-radius: 10px; */
     background-color: #fff;
@@ -197,7 +197,7 @@ span {
     background-color: #f8f8f8;
 }
 .servicios-texto p {
-    height: 200px;
+    /* height: 200px; */
     text-align: left;
     font-size: 14px;
     color: #807d7d;

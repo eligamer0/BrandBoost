@@ -13,7 +13,18 @@ h3 {
     line-height: 2;
     font-weight: 300;
 }
+h2 {
+    font-size: 25px;
+    color: #FFDD00;
+    margin: 0;
+    text-decoration: none;
+}
 
+h4 {
+    font-size: 40px;
+    color: #FFDD00;
+    margin: 0;
+}
 
 .header-logo {
     display: flex;
@@ -231,11 +242,50 @@ h3 {
     padding: 80px;
     margin-top: 50px;
 }
-.ventajas-titulo {
+.ventajas-titulo h2{
     color: #fff;
+    font-weight: 500;
+    font-size: 30px;
 }
 .ventajas-texto {
     display: flex;
     flex-direction: column;
     color: #fff;
+    margin-right: 80px;
+    
+}
+.ventajas-texto span {
+    padding: 10px;
+}
+.ventajas-icono {
+    display: flex;
+    align-items: center;
+}
+.imagen_contacto {
+    background-image: url('../LOGO/PNG/image.png');
+}
+.imagen_contacto {
+    
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+.imagen_contacto p {
+    font-size: 15px;
+    color: #fff;
+    padding: 20px;
+}
+.imagen_contacto span {
+    font-size: 15px;
+    color: #fff;
+    padding: 0;
+}
+.footer {
+    margin-top: 0px;
+    background-color: #000;
+    color: #FFDD00;
+    padding: 1rem 3rem 3rem;
 }
