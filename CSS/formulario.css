@@ -7,6 +7,7 @@ body {
     font-family: "Poppins", serif;
 }
 
+
 .header {
     background-color: #000;
 }
@@ -86,4 +87,106 @@ body {
   -webkit-text-stroke: 1px #fff; /* Borde negro */
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.informaciones {
+    padding: 0px 20px 0px 35px;
+}
+.informaciones-informacion h2 {
+    font-size: 45;
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+.informaciones-informacion p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    line-height: 2;
+    margin: 0;
+}
+.informaciones-informacion .conversemos {
+    font-size: 28px;
+    font-weight: 800;
+
+}
+.informaciones-enlaces {
+    margin: 0;
+    padding: 0;
+}
+.informaciones-enlaces h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 10px;
+}
+.informaciones-enlaces h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.redes-item {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.redes-item-icon {
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+  
+.redes-item-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+  
+.redes-item-icon:hover::before {
+    transform: scaleY(1);
+}
+  
+/* Variables de color para cada ícono */
+.redes-item-icon:nth-child(1)::before {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+
+}
+.redes-item-icon:nth-child(2)::before {
+    --bg-color: #0077b5;
+}
+/* Cierre de Redes sociales */
+
+/* Formulario*/
+.formulario-item1 {
+    display: grid;
+    grid-template-columns: auto auto;
 }
