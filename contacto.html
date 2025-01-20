@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="titulo">
-            <h1> ¿Quieres trabajar juntos, o hablar de una idea? Hagámoslo </h1>
+            <h1> ¿Quieres trabajar juntos <span>, o hablar de una idea? </span> Hagámoslo </h1>
         </div>
     </header>
     <main class="main">
@@ -76,56 +76,51 @@
         </div>
         <div class="formulario">
             <div class="formulario-titulo">
-                <h2>
-                    Formulario de Contacto
-                </h2>
+                <h2>Formulario de Contacto</h2>
             </div>
- 
-            <div>
-                <label for="nombre">Nombre</label>
-                <div>
+        
+            <div class="formulario-nombre-apellido">
+                <div class="formulario-item">
+                    <label for="nombre">Nombre</label>
                     <input type="text" name="nombre">
                 </div>
-            </div>
-            <div>
-                <label for="apellido">Apellido</label>
-                <div>
-                    <input type="text" name="apellido" >
+                <div class="formulario-item">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido">
                 </div>
             </div>
-
-            <div> 
+        
+            <div class="formulario-item">
                 <label for="email">Correo</label>
-                <div>
-                    <input type="email" name="email">
-                </div>
-
+                <input type="email" name="email">
+            </div>
+            <div class="formulario-item">
                 <label for="telefono">Teléfono</label>
-                <div>
-                    <input type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                </div>
-
-                <div>
-                    <label for="seleccion">Selecciona el servicio</label>
-                    <div>
-                        <select name="servicios" id="">
-                            <option disabled selected> -- Selecciona el servicio -- </option>
-                            <option>Impulso de Redes Sociales</option>
-                            <option>Producción Audiovisual</option>
-                            <option>Diseno web UX / UI </option>
-                            <option>Publicidad Exterior</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <div>
-                        <textarea name="mensaje" rows="3"></textarea>
-                    </div>
-                </div>
+                <input type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="formulario-item">
+                <label for="seleccion">Selecciona el servicio</label>
+                <select name="servicios" class="formulario-seleccion">
+                    <option disabled selected>-- Selecciona el servicio --</option>
+                    <option>Impulso de Redes Sociales</option>
+                    <option>Producción Audiovisual</option>
+                    <option>Diseño web UX / UI</option>
+                    <option>Publicidad Exterior</option>
+                </select>
+            </div>
+            <div class="formulario-item">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" rows="5"></textarea>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div>
+            <a href="#" class="logo">
+                <img class="img-logo" src="LOGO/PNG/1.PNG" alt="BrandBoost logo">
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
