@@ -374,24 +374,42 @@ header {
         height: 60vh; /* Reduce la altura del header */
         padding: 20px;
     }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .linea {
+        display: none;
+    }
 
     .nav-container {
         width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
-        padding: 0 10px; /* Reduce los márgenes laterales */
+        padding: 0; /* Reduce los márgenes laterales */
     }
 
     .nav-list {
         display: flex;
         flex-direction: column; /* Acomoda los enlaces en una sola columna */
-        padding: 20px;
+        align-items: start;
+        padding: 5px;
         gap: 15px; /* Ajusta el espacio entre los elementos */
+
     }
 
+    /* .nav-list-div {
+        padding-top: 200px;
+    } */
     .nav-item {
         font-size: 25px; /* Reduce el tamaño de la fuente */
         padding: 10px;
+         
     }
-
+    
+    .nav-information {
+        gap: 0;
+    }
     .nav-toggle {
         width: 30px;
         height: 30px;
@@ -400,12 +418,12 @@ header {
     .carousel-item img,
     .carousel-item video {
         height: 100%;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; 
-    top: 0;
-    left: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; 
+        top: 0;
+        left: 0;
     }
 
     /* Sección "Quienes somos" */
@@ -456,6 +474,14 @@ header {
 @media (max-width: 480px) {
     h1 {
         font-size: 40px; /* Reducir tamaño de los títulos */
+    }
+
+    .nav-logo {
+        position: relative;
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+        z-index: 1;
     }
 
     .nav-item {
