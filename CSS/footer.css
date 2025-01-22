@@ -1,0 +1,12 @@
+.nav-logo {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: 80px; /* Ajusta el tamaño del logo */
+    z-index: 2;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+} 
+.footer {
+    margin-top: 0px;
+    background-color: #000;
+    color: #FFDD00;
+    padding: 1rem 3rem 3rem;
+}
