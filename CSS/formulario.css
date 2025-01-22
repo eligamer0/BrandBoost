@@ -83,6 +83,7 @@ body {
 .titulo {
     font-size: 40px;
     color: #fff;
+    padding: 10px;
 }
 .titulo span {
     font-size: 80px;

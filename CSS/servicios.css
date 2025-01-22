@@ -52,7 +52,6 @@ span {
     height: 80px; /* Ajusta el tamaño del logo */
     z-index: 2;
     object-fit: contain; /* Mantiene la proporción de la imagen */
-
 }
 
 
