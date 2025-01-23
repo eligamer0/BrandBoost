@@ -1,19 +1,4 @@
-html {
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Poppins", serif;
-}
 h2 {
     font-size: 20px;
     font-weight: 500;
@@ -108,6 +93,11 @@ p {
     padding: 0 20px 0 20px;
     line-height: 2; /* Aumenta el espacio entre líneas */
 }
+.nosotros-img img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
 
 .servicios {
     text-align: center;
@@ -201,56 +191,6 @@ p {
 
 
 @media (max-width: 768px) {
-    
-    /* Header */
-    header {
-        height: 60vh; /* Reduce la altura del header */
-        padding: 20px;
-    }
-    .nav {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-    .linea {
-        display: none;
-    }
-
-    .nav-container {
-        width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
-        padding: 0; /* Reduce los márgenes laterales */
-    }
-
-    .nav-list {
-        display: flex;
-        flex-direction: column; /* Acomoda los enlaces en una sola columna */
-        align-items: start;
-        padding: 5px;
-        gap: 15px; /* Ajusta el espacio entre los elementos */
-
-    }
-
-    /* .nav-list-div {
-        padding-top: 200px;
-    } */
-    .nav-item {
-        font-size: 25px; /* Reduce el tamaño de la fuente */
-        padding: 10px;
-         
-    }
-    
-    .nav-information {
-        display: none;
-    }
-    .nav-toggle {
-        width: 30px;
-        height: 30px;
-    }
-    .nav-link {
-        font-size: 30px;
-    }
-
     .quienes-somos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -306,17 +246,4 @@ p {
         margin: 0;
     }
 
-    /* Footer */
-    .footer {
-        padding: 2rem;
-    }
-
-    /* Ajustar imágenes de contacto */
-    .imagen_contacto {
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
 }

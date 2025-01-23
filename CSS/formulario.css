@@ -16,8 +16,8 @@ body {
 }
 
 
-.titulo {
-    font-size: 40px;
+.titulo h1{
+    font-size: 80px;
     color: #fff;
     padding: 10px;
 }
@@ -103,6 +103,9 @@ body {
 .redes-item-icon i {
     position: relative;
     z-index: 2; /* Contenido interno del icono */
+}
+.redes-item-icon svg:hover {
+    fill: #fff; /* Cambia el color de relleno a blanco */
 }
   
 .redes-item-icon::before {

@@ -1,12 +1,22 @@
-.nav-logo {
-    width: 200px; /* Ajusta el tamaño del logo */
-    height: 80px; /* Ajusta el tamaño del logo */
-    z-index: 2;
-    object-fit: contain; /* Mantiene la proporción de la imagen */
-} 
 .footer {
     margin-top: 0px;
     background-color: #000;
     color: #FFDD00;
     padding: 1rem 3rem 3rem;
+}
+
+@media (max-width: 768px) {
+    /* Footer */
+    .footer {
+        padding: 2rem;
+    }
+
+    /* Ajustar imágenes de contacto */
+    .imagen_contacto {
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
 }

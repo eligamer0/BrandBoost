@@ -141,14 +141,32 @@ span {
     color: #fff;
     padding: 20px;
 }
-.imagen_contacto span {
-    font-size: 15px;
-    color: #fff;
-    padding: 0;
-}
-.footer {
-    margin-top: 0px;
-    background-color: #000;
-    color: #FFDD00;
-    padding: 1rem 3rem 3rem;
+
+@media (max-width: 768px) {
+    /* Sección "Servicios" */
+    .servicios-contenido {
+        grid-template-columns: 1fr; /* Muestra los servicios en una sola columna */
+        padding: 10px 20px; /* Ajusta el padding */
+    }
+
+    .servicios-contenido-item {
+        padding: 20px;
+    }
+
+    /* Botones */
+    .boton {
+        width: 100%; /* Asegura que los botones ocupen el 100% de su contenedor */
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Sección "Nosotros" */
+    .nosotros {
+        grid-template-columns: 1fr; /* Apila los elementos de la sección "Nosotros" en una columna */
+        padding: 10px;
+    }
+    .texto {
+        padding: 0;
+        margin: 0;
+    }
 }
