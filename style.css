@@ -294,12 +294,17 @@ header {
     background-color: #f8f8f8;
 }
 .servicios-texto p {
-    /* height: 200px; */
+    height: 200px;
     text-align: left;
     font-size: 14px;
     color: #807d7d;
     padding: 10px;
     line-height: 2;
+}
+@media (max-width: 1110px) {
+    .servicios-texto p {
+        height: auto;
+    }
 }
 .titulo-servicio {
     width: auto;
@@ -348,6 +353,11 @@ header {
     align-items: center;
     padding: 20px;
 }
+.nosotros-img img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
 
 .imagen_contacto {
     background-image: url('LOGO/PNG/image.png');
@@ -380,7 +390,6 @@ header {
 }
 
 
-/* Media queries */
 /* Media queries generales para dispositivos móviles */
 @media (max-width: 768px) {
     /* Header */
@@ -422,11 +431,14 @@ header {
     }
     
     .nav-information {
-        gap: 0;
+        display: none;
     }
     .nav-toggle {
         width: 30px;
         height: 30px;
+    }
+    .nav-link {
+        font-size: 30px;
     }
 
     .carousel-item img,
@@ -468,6 +480,10 @@ header {
         grid-template-columns: 1fr; /* Apila los elementos de la sección "Nosotros" en una columna */
         padding: 10px;
     }
+    .texto {
+        padding: 0;
+        margin: 0;
+    }
 
     /* Footer */
     .footer {
@@ -490,6 +506,11 @@ header {
         font-size: 40px; /* Reducir tamaño de los títulos */
     }
 
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .nav-logo {
         position: relative;
         width: 150px;
@@ -500,6 +521,15 @@ header {
 
     .nav-item {
         font-size: 20px; /* Reducir tamaño de los elementos de navegación */
+    }
+
+    .carousel-item img,
+    .carousel-item video {
+        height: 100%; /* Permite que la altura se ajuste automáticamente */
+        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+        max-height: 100%; /* Limita la altura máxima al 60% del viewport */
+        max-width: 100%;
+        object-fit: cover;
     }
 
     .texto {
