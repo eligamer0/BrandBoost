@@ -16,18 +16,60 @@ body {
 }
 
 
-.titulo h1{
+
+  .titulo {
+    font-size: 2rem;
+    line-height: 1.5;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .titulo h1 {
+    padding-right: 1ch; /* Espacio después del texto */
     font-size: 80px;
     color: #fff;
-    padding: 10px;
-}
-.titulo span {
+  }
+
+  .titulo h1 span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: typewave 0.6s ease-in-out forwards;
+  }
+
+  /* Asigna un retraso a cada letra */
+  .titulo h1 span:nth-child(n) {
+    animation-delay: calc(var(--n) * 0.06s);
+  }
+
+  /* Estilo especial para ", o hablar de una idea" */
+  .especial {
     font-size: 80px;
     color: transparent;
-    -webkit-text-stroke: 1px #FFDD00; /* Borde negro */
+    -webkit-text-stroke: 1px #FFDD00; /* Borde amarillo */
     -webkit-background-clip: text;
     background-clip: text;
-}
+  }
+  .especial span {
+    color: #000;
+  }
+
+  /* Animación ola */
+  @keyframes typewave {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .main {
     display: grid;
