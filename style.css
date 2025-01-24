@@ -246,6 +246,17 @@ header {
     padding-left: 100px; /* Añade espacio a la izquierda para la línea */
    
 }
+.titulo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFDD00;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.titulo a:hover {
+    text-shadow: 0 0 5px #FFDD00;
+}
 
 .titulo::before {
     content: "";
@@ -284,14 +295,17 @@ header {
 }
 .servicios-contenido-item {
     padding: 20px ;
-    /* border: 1px solid #FFDD00;
-    border-radius: 10px; */
+    margin: 10px;
+    border-radius: 10px;
     background-color: #fff;
+
     color: #000;
     text-align: left;
 }
 .servicios-contenido-item:hover {
-    background-color: #f8f8f8;
+    background-color: #dbdada;
+    box-shadow: 0px 0px 15px #000;
+     
 }
 .servicios-texto p {
     height: 200px;
@@ -339,6 +353,7 @@ header {
     background-color: #FFDD00;
     color: #000;
     transition: 0.5s;
+    box-shadow: 0px 0px 15px #FFDD00;
 }
 
 .nosotros {
