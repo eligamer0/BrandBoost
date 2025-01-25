@@ -126,7 +126,7 @@ p {
     line-height: 2;
 }
 
-.boton {
+.boton-mas {
     background-color: #000;
     color: #fff;
     padding: 5px 30px;
@@ -138,19 +138,45 @@ p {
     text-decoration: none;
     
 }
+.boton-mas h5 {
+    letter-spacing: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+.boton-mas:hover {
+    background-color: #FFDD00;
+    color: #000;
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px #FFDD00;
+}
+
+.boton {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    
+}
 .boton-contenido {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px;
 }
 .boton h5 {
     letter-spacing: 0.5em;
+    padding: 0;
+    margin: 0;
 }
 .boton:hover {
     background-color: #FFDD00;
     color: #000;
     transition: 0.5s;
+    box-shadow: 0px 0px 15px #FFDD00;
 }
 
 .nosotros {
