@@ -1,4 +1,3 @@
-
 const track = document.querySelector('.carousel-track');
 const items = Array.from(track.children);
 const videos = track.querySelectorAll('video'); // Selecciona todos los videos en el carrusel
@@ -12,6 +11,18 @@ function moveCarousel() {
         currentVideo.currentTime = 0;
     }
 
+    // Reinicia la animación del texto en la diapositiva actual
+    const currentTitle = items[currentIndex].querySelector('.carousel-titulos');
+    if (currentTitle) {
+        // Reinicia la animación eliminando y volviendo a aplicar la animación a cada span
+        const spans = currentTitle.querySelectorAll('span');
+        spans.forEach(span => {
+            span.style.animation = 'none'; // Elimina la animación
+            span.offsetHeight; // Forza el reflow
+            span.style.animation = ''; // Vuelve a aplicar la animación
+        });
+    }
+
     // Mueve al siguiente elemento
     currentIndex = (currentIndex + 1) % items.length;
     const offset = -currentIndex * 100;
@@ -22,7 +33,18 @@ function moveCarousel() {
     if (nextVideo) {
         nextVideo.play();
     }
+
+    // Reinicia la animación del texto en la nueva diapositiva
+    const nextTitle = items[currentIndex].querySelector('.carousel-titulos');
+    if (nextTitle) {
+        const spans = nextTitle.querySelectorAll('span');
+        spans.forEach(span => {
+            span.style.animation = 'none';
+            span.offsetHeight; // Forza el reflow
+            span.style.animation = ''; // Vuelve a aplicar la animación
+        });
+    }
 }
 
-// Cambia cada 5 segundos (ajusta el tiempo según tus necesidades)
+// Cambia cada 6 segundos (ajusta el tiempo según tus necesidades)
 setInterval(moveCarousel, 6000);
