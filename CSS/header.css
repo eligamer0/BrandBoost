@@ -153,6 +153,7 @@ header {
 }
 .nav-item a:hover,
 .nav-item a:hover span{
+    text-shadow: 0 0 5px #FFDD00;
     color: #FFDD00;
 }
 .nav-item a,
