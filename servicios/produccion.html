@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producción Audiovisual</title>
     <link rel="stylesheet" href="../CSS/impulso.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <!-- Link de las fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,31 +14,61 @@
     <!--  -->
 </head>
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <div>
-                <a href="../index.html" class="logo">
-                    <img class="img-logo" src="../LOGO/PNG/1.PNG" alt="BrandBoost logo">
-                </a>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <figure class="nav-figure">
+                    <a href="../index.html">
+                        <img src="../LOGO/PNG/1.PNG" alt="Logo de la pagina" class="nav-logo" >
+                    </a>
+                </figure>
+
+                <label class="nav-toggle" >
+                    <input type="checkbox" id="menu-input" class="nav-input">
+                </label>
+
+                <ul class="nav-list">
+                    <div class="nav-list-div">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link"> <span>01.</span>Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../nosotros.html" class="nav-link"><span>02.</span>Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../servicios.html" class="nav-link"><span>03.</span>Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../portafolio.html" class="nav-link"><span>04.</span>Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contacto.html" class="nav-link"><span>05.</span>Contactanos</a>
+                        </li>
+                    </div>
+
+                    <div class="nav-information">
+                        <div class="linea"></div>
+                        <div class="nav-information-text">
+                            <h3>Teléfono:</h3>
+                            <p>########## </p>
+                        </div>
+                        <div class="nav-information-text">
+                            <h3>Dirección:</h3>
+                            <p>##########</p>
+                        </div>
+                        <div class="nav-information-text">
+                            <h3>Correo electrónico:</h3>
+                            <p>##########</p>
+                        </div>
+                    </div>
+                </ul>
             </div>
-            <div class="menu">
-                <a href="../menu.html" class="menu-item">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="30" height="30" stroke-width="2.5"> 
-                        <path d="M4 6l16 0"></path> 
-                        <path d="M4 12l16 0"></path> 
-                        <path d="M4 18l16 0"></path> 
-                    </svg>
-                </a>
-            </div>
-        </div>
+        </nav>
+
         <div class="servicio-titulo">
-            <div class="titulo1">
-                <h1> Lorem ipsum dolor sit amet </h1>
-            </div>
-            <div class="titulo2">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, asperiores?</h2>
-            </div>
+            <h1> Servicios </h1>
         </div>
+
     </header>
     <main>
         <div class="seccion">
@@ -151,12 +183,16 @@
         </section>
     </main>
     <footer class="footer">
-        <div>
-            <a href="#" class="logo">
-                <img class="img-logo" src="../LOGO/PNG/1.PNG" alt="BrandBoost logo">
+        <figure class="nav-figure">
+            <a href="../index.html">
+                <img src="../LOGO/PNG/1.PNG" alt="Logo de la pagina" class="nav-logo" >
             </a>
-        </div>
+        </figure>
     </footer>
+
+    <!--Ajustes del header-->
+    <script src="../JS/ajustes-header.js"></script>
+    <!-- Carrucel -->
     <script src="../JS/impulso.carrucel.js"></script>
     
 </body>

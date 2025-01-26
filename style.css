@@ -217,15 +217,17 @@ header {
 }
 .carousel-titulos {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     display: inline-block;
     overflow: hidden;
-    white-space: nowrap;
-    text-align: left; /* Alinea el texto a la izquierda */
-    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la pantalla */
-    top: 70%; /* Centra el texto verticalmente en la mitad de la pantalla */
-    transform: translateY(-50%); /* Ajuste para centrar exactamente */
+    white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
+    text-align: left;
+    left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+    top: 80%; /* Baja el texto */
+    transform: translateY(-50%);
+    width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
+    box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
 }
 .carousel-titulos h1 {
     padding-right: 1ch; /* Espacio después del texto */
@@ -460,6 +462,7 @@ header {
     header {
         height: 60vh; /* Reduce la altura del header */
         padding: 20px;
+        background-color: #000;
     }
     .nav {
         display: flex;
@@ -470,28 +473,20 @@ header {
     .linea {
         display: none;
     }
-
     .nav-container {
         width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
         padding: 0; /* Reduce los márgenes laterales */
     }
-
     .nav-list {
         display: flex;
         flex-direction: column; /* Acomoda los enlaces en una sola columna */
         align-items: start;
         padding: 5px;
         gap: 15px; /* Ajusta el espacio entre los elementos */
-
     }
-
-    /* .nav-list-div {
-        padding-top: 200px;
-    } */
     .nav-item {
         font-size: 25px; /* Reduce el tamaño de la fuente */
         padding: 10px;
-         
     }
     
     .nav-information {
@@ -503,6 +498,36 @@ header {
     }
     .nav-link {
         font-size: 30px;
+    }
+
+    .carousel-titulos {
+        position: absolute;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        display: inline-block;
+        overflow: hidden;
+        white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
+        text-align: left;
+        left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+        top: 80%; /* Baja el texto */
+        transform: translateY(-50%);
+        width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
+        box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
+    }
+    
+    .carousel-titulos h1 {
+        font-size: 36px; /* Texto más pequeño */
+        padding-right: 0%;
+    }
+    .especial {
+        font-size: 36px; /* Ajustar tamaño para móviles */
+        -webkit-text-stroke: 1px #FFDD00; /* Mantiene el borde amarillo */
+    }
+    .carousel-titulos h1 span {
+        transform: translateY(20px); /* Ajuste menor en la animación */
+    }
+    .carousel-titulos h1 span:nth-child(n) {
+        animation-delay: calc(var(--n) * 0.05s); /* Animación más rápida */
     }
 
     .carousel-item img,
@@ -525,11 +550,11 @@ header {
     /* Sección "Servicios" */
     .servicios-contenido {
         grid-template-columns: 1fr; /* Muestra los servicios en una sola columna */
-        padding: 10px 20px; /* Ajusta el padding */
+        padding: 10px 10px; /* Ajusta el padding */
     }
 
     .servicios-contenido-item {
-        padding: 20px;
+        padding: 10px;
     }
 
     /* Botones */
@@ -547,6 +572,15 @@ header {
     .texto {
         padding: 0;
         margin: 0;
+    }
+    .texto1 {
+        padding: 0;
+        line-height: 2; /* Aumenta el espacio entre líneas */
+    }
+    .nosotros-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     /* Footer */
@@ -587,22 +621,32 @@ header {
         font-size: 20px; /* Reducir tamaño de los elementos de navegación */
     }
 
-    .carousel-item img,
     .carousel-item video {
-        height: 100%; /* Permite que la altura se ajuste automáticamente */
-        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
-        max-height: 100%; /* Limita la altura máxima al 60% del viewport */
-        max-width: 100%;
-        object-fit: cover;
+        max-width: auto; /* Ajusta según el tamaño deseado */
+        max-height: 400px; /* Mantiene la proporción del video */
+        object-fit: contain; /* Asegura que el video no se recorte */
+        margin: 0 auto; /* Centra el video horizontalmente */
     }
 
     .texto {
         font-size: 30px; /* Reducir tamaño del texto en secciones */
     }
+    .titulo-servicio {
+        width: auto;
+        height: auto;
+    }
 
     .boton {
         padding: 12px 20px;
         font-size: 12px;
+    }
+    .imagen_contacto h4{
+        font-size: 30px;
+    }
+    .copyright {
+        color: #fff;
+        text-align: center;
+        font-size: 10px;
     }
 
     /* Ajustar más elementos si es necesario */
