@@ -101,7 +101,6 @@ span {
 }
 .boton-contenido {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding: 20px 10px;
 }
@@ -114,6 +113,7 @@ span {
     background-color: #FFDD00;
     color: #000;
     transition: 0.5s;
+    box-shadow: 0px 0px 15px #FFDD00;
 }
 
 .nosotros {
