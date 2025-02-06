@@ -80,9 +80,11 @@ li {
 @media (max-width: 768px) {
     body {
         padding: 0 20px;
+        background-color: #111111;
     }
     .condiciones {
         padding: 20px;
+        box-shadow: none;
     }
     h1, h2 {
         font-size: 20px;
