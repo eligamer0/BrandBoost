@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0 220px;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+
+    background-color: #333333;
+    color: #fff;
+    
+}
+
+h1 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+}
+h2 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+}
+p {
+    font-size: 17px ;
+    padding: 3px 0;
+    margin: 5px;
+}
+div {
+   padding-bottom: 10px;
+}
+span {
+    font-weight: 700;
+    color: #FFDD00;
+}
+a {
+    text-decoration: none;
+    color: #FFDD00;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    padding: 5px;
+}
+.condiciones {
+    background-color: #111111;
+    padding: 40px 80px 40px 60px;
+    box-shadow: 0 0 5px #000;
+}
+.separados {
+    line-height: 2; /* Aumenta el espacio entre líneas */
+}
+.punto {
+    letter-spacing: 0.8em;
+}
