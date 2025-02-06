@@ -8,52 +8,90 @@ body {
     padding: 0 220px;
     text-decoration: none;
     font-family: "Poppins", serif;
-
     background-color: #333333;
     color: #fff;
-    
 }
 
-h1 {
+h1, h2 {
     margin: 0;
     font-size: 27px;
     font-weight: 700;
 }
-h2 {
-    margin: 0;
-    font-size: 27px;
-    font-weight: 700;
-}
+
 p {
-    font-size: 17px ;
+    font-size: 17px;
     padding: 3px 0;
     margin: 5px;
 }
+
 div {
    padding-bottom: 10px;
 }
+
 span {
     font-weight: 700;
     color: #FFDD00;
 }
+
 a {
     text-decoration: none;
     color: #FFDD00;
 }
+
 ul {
     padding-left: 20px;
 }
+
 li {
     padding: 5px;
 }
+
 .condiciones {
     background-color: #111111;
     padding: 40px 80px 40px 60px;
     box-shadow: 0 0 5px #000;
 }
+
 .separados {
     line-height: 2; /* Aumenta el espacio entre líneas */
 }
+
 .punto {
     letter-spacing: 0.8em;
+}
+
+/* Adaptabilidad para tabletas */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 80px;
+    }
+    .condiciones {
+        padding: 30px 50px;
+    }
+    h1, h2 {
+        font-size: 24px;
+    }
+    p, li {
+        font-size: 16px;
+    }
+}
+
+/* Adaptabilidad para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+    .condiciones {
+        padding: 20px;
+    }
+    h1, h2 {
+        font-size: 20px;
+        
+    }
+    p, li {
+        font-size: 14px;
+    }
+    ul {
+        padding-left: 15px;
+    }
 }
