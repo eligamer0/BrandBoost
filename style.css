@@ -274,7 +274,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
     grid-gap: 20px;
-    
+    overflow: hidden;
 }
 
 .titulo { 
@@ -335,6 +335,7 @@ header {
     grid-gap: 0;
     padding: 50px;
     margin-bottom: 5rem;
+    overflow: hidden;
 }
 .servicios-contenido-item {
     padding: 20px ;
@@ -406,6 +407,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
     grid-gap: 20px;
+    overflow: hidden;
 }
 .nosotros-boton {
     display: flex;
@@ -478,7 +480,6 @@ header {
     transition: 0.5s;
     text-shadow: 0px 0px 15px #FFDD00;
 }
-
 .copyright {
     color: #fff;
     text-align: center;
@@ -574,6 +575,7 @@ header {
     .quienes-somos {
         grid-template-columns: 1fr; /* Apila los elementos de la sección en una columna */
         padding: 10px;
+        overflow: hidden;
     }
 
     /* Sección "Servicios" */
@@ -629,13 +631,41 @@ header {
 
 /* Media queries para pantallas aún más pequeñas (por ejemplo, teléfonos muy pequeños) */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 40px; /* Reducir tamaño de los títulos */
+    p {
+        font-size: 14px;
+    }
+    .carousel-titulos h1 {
+        font-size: 36px; /* Texto más pequeño */
+        padding-right: 0%;
+    }
+    .carousel-titulos {
+        position: absolute;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        display: inline-block;
+        overflow: hidden;
+        white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
+        text-align: left;
+        left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+        top: 70%; /* Baja el texto */
+        transform: translateY(-50%);
+        width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
+        box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
     }
 
     .nav-container {
         display: flex;
         flex-direction: column;
+    }
+    .nav-list-div {
+        position: fixed;
+        inset: 0;
+        
+        padding: 1.5rem 5%;
+        padding-top: 140px;
+    }
+    .nav-link {
+        font-size: 27px;
     }
 
     .nav-logo {
@@ -648,13 +678,6 @@ header {
 
     .nav-item {
         font-size: 20px; /* Reducir tamaño de los elementos de navegación */
-    }
-
-    .carousel-item video {
-        max-width: auto; /* Ajusta según el tamaño deseado */
-        max-height: 400px; /* Mantiene la proporción del video */
-        object-fit: contain; /* Asegura que el video no se recorte */
-        margin: 0 auto; /* Centra el video horizontalmente */
     }
 
     .texto {
@@ -671,12 +694,24 @@ header {
     }
     .imagen_contacto h4{
         font-size: 30px;
+        text-align: center;
+    }
+    .p {
+        text-align: center;
+    }
+
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contactos {
+        display: flex;
+        flex-direction: column;
     }
     .copyright {
         color: #fff;
         text-align: center;
         font-size: 10px;
     }
-
-    /* Ajustar más elementos si es necesario */
 }
