@@ -3,6 +3,8 @@
     background-color: #000;
     color: #FFDD00;
     padding: 1rem 3rem 3rem;
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {

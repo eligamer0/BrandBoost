@@ -7,43 +7,36 @@
     align-items: center;
     justify-content: center;
 }
-
-.servicios {
-    text-align: center;
-    padding: 20px;
+.main {
+    padding: 70px;
 }
-.titulo1 {
-    color: #FFDD00;
-    font-size: 25px;
-    margin-bottom: 20px;
-    
-}
-.titulo2 {
-    color: #fff;
-    position: relative;
-    top: -45px;
-}
-
-.seccion {
+.impulso-contenido {
     display: grid;
-    padding: 80px 150px 80px 120px;
-    grid-template-columns: repeat(2, 55% 45%);
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
-.seccion-img img{
-    background-color: #000;
-    width: 400px;
-    height: 400px;
-} 
+.subtext {
+    color: #175AFF;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.contenidos h2{
+    font-size: 36px;
+    color: #363636;
+    padding-bottom: 10px;
+}
+.contenidos p{
+    color: #363636;
+}
+
 .boton {
     background-color: #000;
     color: #fff;
-    padding: 15px 25px;
+    padding: 10px 25px;
     border: none;
     border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
+    font-size: 17px;
     text-decoration: none;
     
 }
@@ -53,7 +46,6 @@
     padding: 20px 10px;
 }
 .boton h5 {
-    letter-spacing: 0.5em;
     padding: 0;
     margin: 0;
 }
@@ -61,133 +53,28 @@
     background-color: #FFDD00;
     color: #000;
     transition: 0.5s;
+    box-shadow: 0px 0px 15px #FFDD00;
 }
 
-.nosotros-boton {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0 0;
+.contenidos2 {
+   
 }
 
-/* aquí va el carrucel  */
-
-.carousel {
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden; /* Oculta el contenido que está fuera del área visible */
+.estrategias {
+    background-color: #FFDD00;
+    padding: 60px 50px;
     border-radius: 10px;
-    margin-left: 100px;
-    /* position: relative;
-    left: 100px; */
+    margin-right: 100px;
+    position: relative;
+    z-index: 1;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Asegúrate de que ocupe el espacio completo */
-    will-change: transform; /* Mejora el rendimiento */
-}
-
-.carousel-slide {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0; /* Impide que las diapositivas cambien de tamaño */
-    width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.carousel-slide img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.carousel-slide .content {
-    max-width: 55%;
-}
-
-.carousel-slide h2 {
-    margin: 0 0 10px;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.carousel-slide p {
-    margin: 0;
-    color: #666;
-    font-size: 1em;
-}
-
-/* Botones de control */
-.carousel-controls {
-    display: flex;
-    padding-left: 10px;
-
-}
-
-.carousel-button {
-    background-color: #fff;
-    border: none;
-}
-
-/* cierre  */
-
-.ventajas {
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 80px;
-    margin-top: 50px;
-}
-.ventajas-titulo h2{
-    color: #fff;
-    font-weight: 500;
-    font-size: 30px;
-}
-.ventajas-texto {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    margin-right: 80px;
-    
-}
-.ventajas-texto span {
-    padding: 10px;
-}
-.ventajas-icono {
-    display: flex;
-    align-items: center;
-}
-.imagen_contacto {
-    background-image: url('../LOGO/PNG/image.png');
-}
-.imagen_contacto {
-    
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 35px;
-}
-.imagen_contacto p {
-    font-size: 15px;
-    color: #fff;
-    padding: 20px;
-}
-.imagen_contacto span {
-    font-size: 15px;
-    color: #fff;
-    padding: 0;
-}
-.footer {
-    margin-top: 0px;
-    background-color: #000;
-    color: #FFDD00;
-    padding: 1rem 3rem 3rem;
+.fondo {
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    left: 78%;
+    top: 140%;
+    z-index: 0;
+    object-fit: cover;
 }
