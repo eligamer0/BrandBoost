@@ -8,3 +8,12 @@ menuInput.addEventListener("change", () => {
         header.style.position = "relative"; // Devuelve el comportamiento normal
     }
 });
+
+// Ajustes del desplazamiento imnecesario del menu
+menuInput.addEventListener("change", () => {
+    if (menuInput.checked) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "";
+    }
+});

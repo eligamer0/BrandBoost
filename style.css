@@ -65,8 +65,8 @@ header {
     
 }
 .nav-logo {
-    width: 200px; /* Ajusta el tamaño del logo */
-    height: 80px; /* Ajusta el tamaño del logo */
+    width: 200px; /*Tamaño del logo */
+    height: 80px; /*Tamaño del logo */
     z-index: 2;
     object-fit: contain; /* Mantiene la proporción de la imagen */
 } 
@@ -527,6 +527,7 @@ body.menu-open {
         align-items: start;
         padding: 5px;
         gap: 15px; /* Ajusta el espacio entre los elementos */
+        height: 100vh;
     }
     .nav-item {
         font-size: 25px; /* Reduce el tamaño de la fuente */
