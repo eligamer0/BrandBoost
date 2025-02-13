@@ -31,8 +31,10 @@ function moveCarousel() {
     // Reproduce el video si está en el nuevo elemento visible
     const nextVideo = items[currentIndex].querySelector('video');
     if (nextVideo) {
-        nextVideo.play();
-    }
+    nextVideo.muted = true; // Asegura que está silenciado
+    nextVideo.play().catch(error => console.log('Error al reproducir:', error));
+}
+
 
     // Reinicia la animación del texto en la nueva diapositiva
     const nextTitle = items[currentIndex].querySelector('.carousel-titulos');
@@ -46,5 +48,5 @@ function moveCarousel() {
     }
 }
 
-// Cambia cada 6 segundos (ajusta el tiempo según tus necesidades)
+// Cambia cada 6 segundos 
 setInterval(moveCarousel, 6000);
