@@ -60,7 +60,7 @@ header {
 .nav {
     display: flex;
     position: relative;
-    z-index: 2;
+    z-index: 1000;
     padding-top: 15px;
     
 }
@@ -91,6 +91,9 @@ header {
     --icon-toggle-menu: url("LOGO/ICONOS/x-regular-36.png");
     --transform-menu-show: translate(0);
 }
+.nav-container:has(.nav-input:checked) .nav-list {
+    pointer-events: auto;
+}
 
 .nav-figure, .nav-toggle{
     z-index: 10;
@@ -112,12 +115,12 @@ header {
 }
 
 .nav-list {
-    transform: var(--transform-menu-show);
     position: fixed;
+    transform: var(--transform-menu-show);
     inset: 0;
 
     width: 100%;
-    height: 100%; /* Abarca la altura del header */
+    height: 100vh; /* Ocupa toda la pantalla */
 
     display: grid;
     grid-template-columns: 50% 50% ;
@@ -132,6 +135,7 @@ header {
 
     transition: .5s transform;
     z-index: 2;
+    pointer-events: none;
 }
 
 .nav-link {
@@ -180,6 +184,11 @@ header {
 }
 .nav-information-text {
     color: #fff;
+}
+
+/* Bloquear scroll cuando el menú esté abierto */
+body.menu-open {
+    overflow: hidden;
 }
 
 /* Carrusel */
@@ -450,6 +459,11 @@ header {
     color: #FFDD00;
     padding: 1rem 3rem;
 }
+.logo-footer {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: 80px; /* Ajusta el tamaño del logo */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+} 
 .footer-items {
     display: flex;
     justify-content: space-between;
