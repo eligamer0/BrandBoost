@@ -91,9 +91,6 @@ header {
     --icon-toggle-menu: url("LOGO/ICONOS/x-regular-36.png");
     --transform-menu-show: translate(0);
 }
-.nav-container:has(.nav-input:checked) .nav-list {
-    pointer-events: auto;
-}
 
 .nav-figure, .nav-toggle{
     z-index: 10;
@@ -125,7 +122,6 @@ header {
     display: grid;
     grid-template-columns: 50% 50% ;
     place-content: center;
-    /* gap: 2rem; */
     align-items: center;
 
     padding: 1.5rem 5%;
@@ -135,7 +131,6 @@ header {
 
     transition: .5s transform;
     z-index: 2;
-    pointer-events: none;
 }
 
 .nav-link {
