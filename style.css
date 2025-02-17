@@ -117,7 +117,7 @@ header {
     inset: 0;
 
     width: 100%;
-    height: 100vh; /* Ocupa toda la pantalla */
+    height: 100%; /* Ocupa toda la pantalla */
 
     display: grid;
     grid-template-columns: 50% 50% ;
@@ -644,6 +644,10 @@ body.menu-open {
     p {
         font-size: 14px;
     }
+    .carousel-item video {
+        height: 420px;
+
+    }
     .carousel-titulos h1 {
         font-size: 36px; /* Texto más pequeño */
         padding-right: 0%;
@@ -662,10 +666,10 @@ body.menu-open {
         width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
         box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
     }
-
-    .nav-container {
-        display: flex;
-        flex-direction: column;
+    
+    .nav-list-div {
+        width: 100%;
+        height: 100%;
     }
     .nav-list-div {
         position: fixed;
