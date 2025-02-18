@@ -25,12 +25,13 @@ body {
     justify-content: center;
 }
 .main-contenido {
-    padding: 70px;
+    padding: 70px 140px;
+
 }
 .impulso-contenido {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 10px;
 }
 .subtext {
     color: #175AFF;
@@ -78,15 +79,17 @@ body {
     height: auto;
     width: 200px;
     position: absolute;
-    left: 73%;
-    top: 147%;
+    left: 76%;
+    top: 133%;
     z-index: 0;
     object-fit: cover;
 }
 
 .contenido2 {
-    height: 500px;
-    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .contenido2-subtext {
     padding: 15px;
@@ -98,8 +101,8 @@ body {
 }
 
 .estrategias {
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 440px;
     padding: 30px;
 
     background-image: linear-gradient( #f8e00b, #fbff00,  #f8e00b);;
@@ -181,6 +184,9 @@ body {
 }
 
 @media (max-width: 968px) {
+    .main-contenido {
+        padding: 70px;
+    }
     .impulso-contenido {
         display: flex;
         flex-direction: column;
