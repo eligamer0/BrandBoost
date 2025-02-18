@@ -26,7 +26,6 @@ body {
 }
 .main-contenido {
     padding: 70px 140px;
-
 }
 .impulso-contenido {
     display: grid;
@@ -183,10 +182,7 @@ body {
     align-items: center;
 }
 
-@media (max-width: 968px) {
-    .main-contenido {
-        padding: 70px;
-    }
+@media (max-width: 1115px) {
     .impulso-contenido {
         display: flex;
         flex-direction: column;
@@ -199,13 +195,16 @@ body {
     }
 }
 
+@media (max-width: 968px) {
+    .main-contenido {
+        padding: 70px;
+    }
+
+}
+
 @media (max-width: 768px) {
     .main-contenido {
         padding: 20px;
-    }
-    .impulso-contenido {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
     .ventajas {
         grid-template-columns: 1fr;
@@ -216,9 +215,13 @@ body {
         margin-right: 0;
     }
     .estrategias {
-        height: 100%;
-        width: auto;
         padding: 20px;
+    }
+    .fondo {
+        height: auto;
+        width: 200px;
+        left: 65%;
+        top: 170%;
     }
     
 }
@@ -246,6 +249,7 @@ body {
         margin: 0;
     }
     .estrategias {
+        width: auto;
         padding: 20px;
     }
     .ventajas {

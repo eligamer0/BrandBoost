@@ -168,50 +168,48 @@ header {
 
 /* Media queries generales para dispositivos móviles */
 @media (max-width: 768px) {
-    /* Header */
-    header {
-        height: 60vh; /* Reduce la altura del header */
-        padding: 20px;
-    }
-    .nav {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-    .linea {
-        display: none;
-    }
+   /* Header */
+   header {
+    height: 60vh; /* Reduce la altura del header */
+    padding: 20px;
+    background-color: #000;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.linea {
+    display: none;
+}
+.nav-container {
+    width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
+    padding: 0; /* Reduce los márgenes laterales */
+}
+.nav-list {
+    display: flex;
+    flex-direction: column; /* Acomoda los enlaces en una sola columna */
+    align-items: start;
+    padding: 5px;
+    gap: 15px; /* Ajusta el espacio entre los elementos */
+    height: 100vh;
+}
+.nav-item {
+    font-size: 25px; /* Reduce el tamaño de la fuente */
+    padding: 10px;
+}
 
-    .nav-container {
-        width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
-        padding: 0; /* Reduce los márgenes laterales */
-    }
-
-    .nav-list {
-        display: flex;
-        flex-direction: column; /* Acomoda los enlaces en una sola columna */
-        align-items: start;
-        padding: 5px;
-        gap: 15px; /* Ajusta el espacio entre los elementos */
-
-    }
-    .nav-item {
-        font-size: 25px; /* Reduce el tamaño de la fuente */
-        padding: 10px;
-         
-    }
-    
-    .nav-information {
-        display: none;
-    }
-    .nav-toggle {
-        width: 30px;
-        height: 30px;
-    }
-    .nav-link {
-        font-size: 30px;
-    }
+.nav-information {
+    display: none;
+}
+.nav-toggle {
+    width: 30px;
+    height: 30px;
+}
+.nav-link {
+    font-size: 30px;
+}
 
 
 }
@@ -222,9 +220,19 @@ header {
         font-size: 40px; /* Reducir tamaño de los títulos */
     }
 
-    .nav-container {
-        display: flex;
-        flex-direction: column;
+    .nav-list-div {
+        width: 100%;
+        height: 100%;
+    }
+    .nav-list-div {
+        position: fixed;
+        inset: 0;
+        
+        padding: 1.5rem 5%;
+        padding-top: 140px;
+    }
+    .nav-link {
+        font-size: 27px;
     }
 
     .nav-logo {

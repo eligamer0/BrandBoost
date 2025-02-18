@@ -55,20 +55,29 @@ span {
     grid-gap: 0;
     padding: 50px;
     margin-bottom: 5rem;
+    overflow: hidden;
 }
 .servicios-contenido-item {
-    padding: 20px ;
-    /* border: 1px solid #FFDD00;
-    border-radius: 10px; */
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define tres filas: título, contenido y botón */
+
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
     background-color: #fff;
     color: #000;
     text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    transition: box-shadow 0.5s ease, transform 0.5s ease !important;
 }
 .servicios-contenido-item:hover {
-    background-color: #f8f8f8;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-5px) !important;
 }
+
+
 .servicios-texto p {
-    height: 200px;
     text-align: left;
     font-size: 14px;
     color: #807d7d;
@@ -82,7 +91,6 @@ span {
 }
 .titulo-servicio {
     width: auto;
-    height: 70px;
     padding: 10px;
     text-align: left;
 }
@@ -116,19 +124,6 @@ span {
     box-shadow: 0px 0px 15px #FFDD00;
 }
 
-.nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-    grid-gap: 20px;
-}
-.nosotros-boton {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
 .imagen_contacto {
     background-image: url('../LOGO/PNG/image.png');
 }
@@ -145,6 +140,11 @@ span {
     font-size: 15px;
     color: #fff;
     padding: 20px;
+}
+.imagen_contacto span {
+    font-size: 15px;
+    color: #fff;
+    padding: 0;
 }
 
 @media (max-width: 768px) {

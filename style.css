@@ -342,23 +342,26 @@ body.menu-open {
     overflow: hidden;
 }
 .servicios-contenido-item {
-    padding: 20px ;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define tres filas: título, contenido y botón */
+
+
+    padding: 20px;
     margin: 10px;
     border-radius: 10px;
     background-color: #fff;
     color: #000;
     text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.5s ease, transform 0.5s ease; /* Incluí un cambio adicional para más impacto */
-
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    transition: box-shadow 0.5s ease, transform 0.5s ease !important;
 }
 .servicios-contenido-item:hover {
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); /* Sombra más grande y con mayor opacidad */
-    transform: translateY(-5px); /* Da un pequeño efecto de "elevación" */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-5px) !important;
 }
 
+
 .servicios-texto p {
-    height: 200px;
     text-align: left;
     font-size: 14px;
     color: #807d7d;
@@ -372,7 +375,6 @@ body.menu-open {
 }
 .titulo-servicio {
     width: auto;
-    height: 70px;
     padding: 10px;
     text-align: left;
 }
@@ -437,13 +439,14 @@ body.menu-open {
 }
 .slider .slide img {
     width: 100%;
+    padding: 0 20px;
 }
 @keyframes scroll{
-    from {
+    0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-    to {
+    100% {
         -webkit-transform: translateX(calc(-200px * 6));
         transform: translateX(calc(-200px * 6));
     }
