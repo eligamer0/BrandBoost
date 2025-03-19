@@ -268,13 +268,17 @@ body.menu-open {
     width: 948px;
     height: 160;
     padding: 10px 0;
-
     
     color: #fff;
     font-family: Poppins;
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
+}
+@media (max-width: 1130px) {
+    .carousel-titulos p {
+        width: 100%;
+    }
 }
 
 .especial {
