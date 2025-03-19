@@ -204,22 +204,34 @@ body.menu-open {
 }
 
 .carousel-item {
-    position: relative; /* Asegura que el título se posicione correctamente sobre los elementos */
     min-width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative; /* Asegura que el título se posicione correctamente sobre los elementos */
 }
 
-.carousel-image-wrapper {
-    position: relative;
+.carousel-item img,
+.carousel-item video {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Asegura que todo se vea proporcional */
 }
-
-.carousel-image-wrapper::before {
+.carousel-image-wrapper {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+}
+  
+/* .carousel-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+  
+.carousel-image-wrapper::after {
     content: "";
     position: absolute;
     top: 0;
@@ -227,24 +239,9 @@ body.menu-open {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 19.03%, rgba(0, 0, 0, 0.7) 50.18%, #000000 95.24%);
-    z-index: 1; /* Asegura que el degradado esté sobre la imagen */
-    pointer-events: none; /* Permite que los eventos pasen a través del pseudo-elemento */
+    pointer-events: none; /* Asegura que no bloquee clics */
 }
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que todo se vea proporcional */
-    position: relative;
-    z-index: 0; /* Asegura que la imagen esté debajo del degradado */
-}
-
-.carousel-item video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que todo se vea proporcional */
-    background: none;
-}
+  
 .carousel-titulos {
     position: absolute;
     line-height: 1.5;
@@ -256,8 +253,8 @@ body.menu-open {
 
     /* width: 1070px;
     height: 90px; */
-    top: 460px;
-    left: 250px;
+    top: 400px;
+    left: 85px;
 
 }
 .carousel-titulos h1 {
@@ -271,17 +268,16 @@ body.menu-open {
 .carousel-titulos p {
     width: 948px;
     /* height: 160; */
-    top: 666px;
-    left: 290px;
-    padding: 20px 0;
+    /* top: 666px;
+    left: 290px; */
+    padding: 10px 0;
 
     
     color: #fff;
     font-family: Poppins;
     font-weight: 400;
     font-size: 17px;
-    line-height: 40px;
-    letter-spacing: 0%;
+    line-height: 30px;
 }
 .especial {
     font-size: 60px;
