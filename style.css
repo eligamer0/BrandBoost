@@ -262,15 +262,11 @@ body.menu-open {
     color: #fff;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 5vw;
-    line-height: 90px;
-    letter-spacing: 0%;
+    font-size: 4.5vw;
 }
 .carousel-titulos p {
     width: 948px;
-    /* height: 160; */
-    /* top: 666px;
-    left: 290px; */
+    height: 160;
     padding: 10px 0;
 
     
@@ -280,8 +276,9 @@ body.menu-open {
     font-size: 17px;
     line-height: 30px;
 }
+
 .especial {
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: transparent;
     -webkit-text-stroke: 1px #FFDD00; /* Borde amarillo */
     -webkit-background-clip: text;
