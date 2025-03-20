@@ -267,13 +267,13 @@ body.menu-open {
 .carousel-titulos p {
     width: 948px;
     height: 160;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     
     color: #fff;
     font-family: Poppins;
     font-weight: 400;
     font-size: 17px;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 @media (max-width: 1130px) {
     .carousel-titulos p {
@@ -303,7 +303,6 @@ body.menu-open {
     display: flex;
     align-items: center;
     padding: 20px 0;
-    
 }
 .carousel-boton {
     background: linear-gradient(176.4deg, #FEE069 6.24%, #FFD83E 12.59%, #FFD83E 61.06%, #998200 97.05%);
@@ -314,12 +313,11 @@ body.menu-open {
     border-radius: 6px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
     text-decoration: none; 
 }
 .carousel-boton h5 {
-    font-size: 20px;
-    /* letter-spacing: 0.5em; */
+    font-size: 13px;
+    letter-spacing: 0.2em;
     padding: 0;
     margin: 0;
 }
@@ -671,6 +669,9 @@ body.menu-open {
     }
     .carousel-titulos h1 span:nth-child(n) {
         animation-delay: calc(var(--n) * 0.05s); /* Animación más rápida */
+    }
+    .carousel-titulos p {
+        display: none;
     }
 
     .carousel-item img,
