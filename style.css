@@ -347,11 +347,41 @@ body.menu-open {
 
 
 .quienes-somos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
-    grid-gap: 20px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.quienes-somos-logo img{
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+.quienes-somos-textos {
+    text-align: center;
+}
+.quienes-somos-textos h2 {
+    color: #000; 
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.quienes-somos-textos h3 {
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500px;
+}
+.quienes-somos-textos p{
+    color: #7D7C7C;
+    padding: 0 200px;
+}
+.quienes-somos-boton {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    padding-bottom: 100px;
 }
 
 .titulo { 
@@ -366,18 +396,9 @@ body.menu-open {
     padding-left: 100px; /* Añade espacio a la izquierda para la línea */
    
 }
-.titulo a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #FFDD00;
-    font-weight: 500;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
 .titulo a:hover {
     text-shadow: 0 0 5px #FFDD00;
 }
-
 .titulo::before {
     content: "";
     position: absolute;
