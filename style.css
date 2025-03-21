@@ -267,13 +267,10 @@ body.menu-open {
 .carousel-titulos p {
     width: 948px;
     height: 160;
-    /* padding: 10px 0; */
-    
     color: #fff;
     font-family: Poppins;
     font-weight: 400;
     font-size: 17px;
-    /* line-height: 30px; */
 }
 @media (max-width: 1130px) {
     .carousel-titulos p {
@@ -364,6 +361,7 @@ body.menu-open {
     padding: 20px;
     font-size: 40px;
     font-weight: 500;
+    line-height: 1;
 }
 .quienes-somos-textos h3 {
     color: #000;
@@ -384,7 +382,7 @@ body.menu-open {
 .somos-boton {
     color: #3E8BFF;
     padding: 15px 25px;
-    border: 1px solid #3E8BFF;
+    border: 3px solid #3E8BFF;
     border-radius: 5px;
     text-transform: uppercase;
     text-decoration: none; 
@@ -457,8 +455,7 @@ body.menu-open {
 
 .servicios {
     padding: 60px 0 0 0;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .servicios-contenido {
@@ -744,6 +741,10 @@ body.menu-open {
         grid-template-columns: 1fr; /* Apila los elementos de la sección en una columna */
         padding: 10px;
         overflow: hidden;
+    }
+    .quienes-somos-textos p{
+        color: #7D7C7C;
+        padding: 20px;
     }
 
     /* Sección "Servicios" */
