@@ -39,13 +39,6 @@ h4 {
     color: #FFDD00;
     margin: 0;
 }
-/* span {
-    font-size: 13px;
-    color: #000; 
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-} */
-
 
 /* Header completo */
 header {
@@ -65,7 +58,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent; /* Color de fondo */
+    /* background: transparent; Color de fondo */
     /* backdrop-filter: blur(10px); /* Desenfoque del contenido detrás */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Sombra para que se vea mejor */
     z-index: 1000; /* Asegura que esté sobre otros elementos */
@@ -235,6 +228,12 @@ body.menu-open {
     top: 70%;
     left: 46%;
 }
+@media (min-width: 550px) {
+    .carousel-titulos br{
+        display: none;
+    }
+}
+
 .carousel-titulos h1 {
     color: #fff;
     font-family: Poppins;
@@ -349,6 +348,11 @@ body.menu-open {
 .quienes-somos-textos p{
     color: #7D7C7C;
     padding: 0 200px;
+}
+@media (max-width: 1155px) {
+    .quienes-somos-textos br{
+        display: none;
+    }
 }
 .quienes-somos-boton {
     display: flex;
@@ -638,51 +642,8 @@ body.menu-open {
         padding: 0;
         margin: 0;
     }
-    .linea {
-        display: none;
-    }
-    .nav-container {
-        width: 100%; /* Asegura que el contenedor de la navegación se ajuste al 100% */
-        padding: 0; /* Reduce los márgenes laterales */
-    }
-    .nav-list {
-        display: flex;
-        flex-direction: column; /* Acomoda los enlaces en una sola columna */
-        align-items: start;
-        padding: 5px;
-        gap: 15px; /* Ajusta el espacio entre los elementos */
-        height: 100vh;
-    }
-    .nav-item {
-        font-size: 25px; /* Reduce el tamaño de la fuente */
-        padding: 10px;
-    }
-    
-    .nav-information {
-        display: none;
-    }
-    .nav-toggle {
-        width: 30px;
-        height: 30px;
-    }
-    .nav-link {
-        font-size: 30px;
-    }
 
-    .carousel-titulos {
-        position: absolute;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        display: inline-block;
-        overflow: hidden;
-        white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
-        text-align: left;
-        left: 10px; /* Ajusta la distancia desde el borde izquierdo */
-        top: 80%; /* Baja el texto */
-        transform: translateY(-50%);
-        width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
-        box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
-    }
+
     
     .carousel-titulos h1 {
         font-size: 36px; /* Texto más pequeño */
@@ -714,14 +675,8 @@ body.menu-open {
     }
 
     /* Sección "Quienes somos" */
-    .quienes-somos {
-        grid-template-columns: 1fr; /* Apila los elementos de la sección en una columna */
-        padding: 10px;
-        overflow: hidden;
-    }
     .quienes-somos-textos p{
-        color: #7D7C7C;
-        padding: 20px;
+        padding: 10px;
     }
 
     /* Sección "Servicios" */
@@ -777,6 +732,9 @@ body.menu-open {
 
 /* Media queries para pantallas aún más pequeñas (por ejemplo, teléfonos muy pequeños) */
 @media (max-width: 480px) {
+    .button-menu {
+        width: 2.5rem;
+    }
     p {
         font-size: 14px;
     }
@@ -801,33 +759,6 @@ body.menu-open {
         transform: translateY(-50%);
         width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
         box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
-    }
-
-    .nav-list-div {
-        width: 100%;
-        height: 100%;
-    }
-    .nav-list-div {
-        position: fixed;
-        inset: 0;
-        
-        padding: 1.5rem 5%;
-        padding-top: 140px;
-    }
-    .nav-link {
-        font-size: 27px;
-    }
-
-    .nav-logo {
-        position: relative;
-        width: 150px;
-        height: auto;
-        object-fit: contain;
-        z-index: 1;
-    }
-
-    .nav-item {
-        font-size: 20px; /* Reducir tamaño de los elementos de navegación */
     }
 
     .texto {

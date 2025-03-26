@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
       icono.src = src; // Asignar nuevamente la URL
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.0 });
 
 // Observar cada ícono
 iconos.forEach(icono => {
