@@ -59,9 +59,16 @@ header {
 /* Navegación */
 .nav {
     display: flex;
-    position: relative;
-    z-index: 1000;
     padding-top: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* Color de fondo */
+    /* backdrop-filter: blur(10px); /* Desenfoque del contenido detrás */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Sombra para que se vea mejor */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
     
 }
 .nav-logo {
@@ -98,7 +105,7 @@ header {
 }
 
 .button-menu div {
-    background: #fff;
+    background: #FFDD00;
     height: 2px;
     width: 100%;
     border-radius: 5px;
@@ -108,12 +115,14 @@ header {
 
 .button-menu.active div:first-child {
     transform: rotate(45deg);
+    background: #fff;
 }
 .button-menu.active div:nth-child(2) {
     opacity: 0;
 }
 .button-menu.active div:last-child {
     transform: rotate(-45deg);
+    background: #fff;
 }
 
 .overlay {
