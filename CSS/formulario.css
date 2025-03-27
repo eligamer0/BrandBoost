@@ -18,23 +18,30 @@ body {
 
 
 .titulo {
-    font-size: 2rem;
-    line-height: 1.5;
-    display: inline-block;
+    position: absolute;
+    line-height: 1.2;
     overflow: hidden;
     white-space: normal;
-    width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
-    box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajusta el ancho de manera responsiva */
+    box-sizing: border-box;
+    top: 70%;
+    left: 46%;
+}
+.titulo br {
+    display: none;
 }
 
 .titulo h1 {
     padding-right: 1ch; /* Espacio después del texto */
-    font-size: 80px;
     color: #fff;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 4.5vw;
 }
 
 .titulo h1 span {
-    display: inline-block;
+    display: inline; /* Permite que las palabras se ajusten automáticamente */
     opacity: 0;
     transform: translateY(30px);
     animation: typewave 0.6s ease-in-out forwards;
@@ -45,9 +52,9 @@ body {
     animation-delay: calc(var(--n) * 0.06s);
 }
 
-  /* Estilo especial para ", o hablar de una idea" */
+/* Estilo especial para ", o hablar de una idea" */
 .especial {
-    font-size: 80px;
+    font-size: 4.5vw;
     color: transparent;
     -webkit-text-stroke: 1px #FFDD00; /* Borde amarillo */
     -webkit-background-clip: text;
@@ -232,20 +239,13 @@ textarea {
         gap: 20px;
     }
 
-
-    .titulos h1 {
-        font-size: 20px; /* Texto más pequeño */
+    .titulo h1 {
+        font-size: 36px; /* Texto más pequeño */
         padding-right: 0%;
     }
     .especial {
-        font-size: 20px; /* Ajustar tamaño para móviles */
+        font-size: 36px; /* Ajustar tamaño para móviles */
         -webkit-text-stroke: 1px #FFDD00; /* Mantiene el borde amarillo */
-    }
-    .titulos h1 span {
-        transform: translateY(20px); /* Ajuste menor en la animación */
-    }
-    .titulos h1 span:nth-child(n) {
-        animation-delay: calc(var(--n) * 0.05s); /* Animación más rápida */
     }
 
     .informaciones {
@@ -295,11 +295,15 @@ textarea {
 
 @media (max-width: 480px) {
     .titulo h1 {
-        font-size: 40px;
+        font-size: 35px; /* Texto más pequeño */
+        padding-right: 0%;
+    }
+    .especial {
+        font-size: 35px; /* Ajustar tamaño para móviles */
     }
 
-    .titulo {
-        font-size: 1.2rem;
+    .titulo br {
+        display: none;
     }
 
     .informaciones-informacion h2 {

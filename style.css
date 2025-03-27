@@ -746,20 +746,7 @@ body.menu-open {
         font-size: 36px; /* Texto más pequeño */
         padding-right: 0%;
     }
-    .carousel-titulos {
-        position: absolute;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        display: inline-block;
-        overflow: hidden;
-        white-space: normal; /* Permite que el texto se ajuste a múltiples líneas */
-        text-align: left;
-        left: 10px; /* Ajusta la distancia desde el borde izquierdo */
-        top: 70%; /* Baja el texto */
-        transform: translateY(-50%);
-        width: calc(100% - 20px); /* Limita el ancho al tamaño de la pantalla menos márgenes */
-        box-sizing: border-box; /* Asegura que el padding/margen no exceda el ancho */
-    }
+
 
     .texto {
         font-size: 30px; /* Reducir tamaño del texto en secciones */

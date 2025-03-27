@@ -35,6 +35,13 @@ p {
     line-height: 2;
     color: #888;
 }
+.servicio-titulo {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .elementos {
     padding: 6rem;

@@ -45,22 +45,21 @@ span {
 }
 
 .servicios {
-    padding: 10px;
-    text-align: center;
+    padding: 60px 0 0 0;
+    text-align: center;  
 }
 
 .servicios-contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0;
-    padding: 50px;
+    padding: 50px 180px;
     margin-bottom: 5rem;
-    overflow: hidden;
+    flex-grow: 1;
 }
 .servicios-contenido-item {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Define tres filas: título, contenido y botón */
-
 
     padding: 20px;
     margin: 10px;
@@ -82,17 +81,20 @@ span {
     font-size: 14px;
     color: #807d7d;
     padding: 10px;
+    display: flex;
+    align-items: stretch;
     line-height: 2;
 }
-@media (max-width: 1110px) {
-    .servicios-texto p {
-        height: auto;
+@media (max-width: 950px) {
+    .servicios-contenido {
+        padding: 50px 100px;
     }
 }
 .titulo-servicio {
     width: auto;
     padding: 10px;
     text-align: left;
+    
 }
 
 .boton {

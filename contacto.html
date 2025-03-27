@@ -23,50 +23,27 @@
         <nav class="nav">
             <div class="nav-container">
                 <figure class="nav-figure">
-                    <a href="index.html">
-                        <img src="LOGO/PNG/1.PNG" alt="Logo de la pagina" class="nav-logo" >
+                    <a href="index.html" aria-label="Ir a la página de inicio">
+                        <img src="LOGO/PNG/1.PNG" alt="Logo de la página" class="nav-logo">
                     </a>
                 </figure>
 
-                <label class="nav-toggle" >
-                    <input type="checkbox" id="menu-input" class="nav-input">
-                </label>
-
-                <ul class="nav-list">
-                    <div class="nav-list-div">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link"> <span>01.</span>Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="nosotros.html" class="nav-link"><span>02.</span>Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="servicios.html" class="nav-link"><span>03.</span>Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="portafolio.html" class="nav-link"><span>04.</span>Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contacto.html" class="nav-link"><span>05.</span>Contactanos</a>
-                        </li>
-                    </div>
-
-                    <div class="nav-information">
-                        <div class="linea"></div>
-                        <div class="nav-information-text">
-                            <h3>Teléfono:</h3>
-                            <p>########## </p>
-                        </div>
-                        <div class="nav-information-text">
-                            <h3>Dirección:</h3>
-                            <p>##########</p>
-                        </div>
-                        <div class="nav-information-text">
-                            <h3>Correo electrónico:</h3>
-                            <p>##########</p>
+                <div>
+                    <button class="button-menu" id="menuButton">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <div id="myNav" class="overlay">
+                        <div class="overlay-content">
+                          <a href="index.html">Inicio</a>
+                          <a href="nosotros.html">Nosotros</a>
+                          <a href="servicios.html">Servicios</a>
+                          <a href="portafolio.html">Portafolio</a>
+                          <a href="contacto.html">Contáctanos</a>
                         </div>
                     </div>
-                </ul>
+                </div>
             </div>
         </nav>
         <div class="titulo">
@@ -198,5 +175,7 @@
 
     <!--Ajustes del header-->
     <script src="JS/ajustes-header.js"></script>
+    <!-- menu  -->
+     <script src="JS/menu.js"></script>
 </body>
 </html>
