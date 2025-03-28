@@ -9,6 +9,15 @@
     height: 80px; /* Ajusta el tamaño del logo */
     object-fit: contain; /* Mantiene la proporción de la imagen */
 } 
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.footer-menu-items {
+
+}
 .footer-items {
     display: flex;
     justify-content: space-between;
