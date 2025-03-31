@@ -20,25 +20,10 @@ body {
 a {
     text-decoration: none;
 }
-h1 {
-    font-size: 50px;
-    color: #FFDD00;
-    margin: 0;
-    text-decoration: none;
-}
-
-
 
 
 /* Header completo */
-header {
-    position: relative;
-    height: 80vh; /* Ocupa toda la altura del viewport */
-    width: 100%;
-    overflow: hidden;
-    z-index: 5;
-    background-color: #000;
-}
+
 
 /* Navegación */
 .nav {
@@ -52,6 +37,7 @@ header {
     /* backdrop-filter: blur(10px); /* Desenfoque del contenido detrás */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Sombra para que se vea mejor */
     z-index: 1000; /* Asegura que esté sobre otros elementos */
+
     
 }
 .nav-logo {

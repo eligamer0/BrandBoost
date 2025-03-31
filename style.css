@@ -244,7 +244,7 @@ body.menu-open {
 }
 .carousel-titulos p {
     width: 948px;
-    height: 160;
+    /* height: 160px; */
     color: #fff;
     font-family: Poppins;
     font-weight: 400;
