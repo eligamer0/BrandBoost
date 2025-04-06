@@ -1,199 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Gráfico</title>
-    <link rel="stylesheet" href="../CSS/impulso.css">
+    <title>Producción Audiovisual</title>
+    <link rel="stylesheet" href="../CSS/produccion.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- Link SwiperJS CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Link de las fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lemon&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--  -->
 </head>
 <body>
     <header>
         <nav class="nav">
             <div class="nav-container">
                 <figure class="nav-figure">
-                    <a href="../index.html">
-                        <img src="../LOGO/PNG/1.PNG" alt="Logo de la pagina" class="nav-logo" >
+                    <a href="../index.html" aria-label="Ir a la página de inicio">
+                        <img src="../LOGO/PNG/1.PNG" alt="Logo de la página" class="nav-logo">
                     </a>
                 </figure>
-
-                <label class="nav-toggle" >
-                    <input type="checkbox" id="menu-input" class="nav-input">
-                </label>
-
-                <ul class="nav-list">
-                    <div class="nav-list-div">
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link"> <span>01.</span>Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../nosotros.html" class="nav-link"><span>02.</span>Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../servicios.html" class="nav-link"><span>03.</span>Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../portafolio.html" class="nav-link"><span>04.</span>Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../contacto.html" class="nav-link"><span>05.</span>Contactanos</a>
-                        </li>
-                    </div>
-
-                    <div class="nav-information">
-                        <div class="linea"></div>
-                        <div class="nav-information-text">
-                            <h3>Teléfono:</h3>
-                            <p>########## </p>
-                        </div>
-                        <div class="nav-information-text">
-                            <h3>Dirección:</h3>
-                            <p>##########</p>
-                        </div>
-                        <div class="nav-information-text">
-                            <h3>Correo electrónico:</h3>
-                            <p>##########</p>
+                <div>
+                    <button class="button-menu" id="menuButton">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <div id="myNav" class="overlay">
+                        <div class="overlay-content">
+                            <a href="../index.html">Inicio</a>
+                            <a href="../nosotros.html">Nosotros</a>
+                            <a href="../servicios.html">Servicios</a>
+                            <a href="../portafolio.html">Portafolio</a>
+                            <a href="../contacto.html">Contáctanos</a>
                         </div>
                     </div>
-                </ul>
+                </div>
             </div>
         </nav>
-
-        <div class="servicio-titulo">
-            <h1> Servicios </h1>
-        </div>
-
     </header>
-    <main>
-        <div class="seccion">
-            <div>
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quas velit 
-                    temporibus, deserunt hic, dolores laudantium inventore eligendi ex voluptates veniam, 
-                    numquam vero assumenda perspiciatis ipsam nobis magnam quibusdam quia!
+    
+    <section class="produccion">
+        <div class="produccion-fondo">
+            <div class="produccion-titulo">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <div class="produccion-apartado">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusamus aspernatur 
+                    deleniti labore asperiores minus! Officiis magni id molestiae cumque officia? Exercitationem 
+                    qui saepe quas unde distinctio. Eius, dignissimos dicta?
                 </p>
-                <div class="boton-contenido nosotros-boton">
-                    <a href="#" class="boton"> 
-                        <h5>Contactanos</h5> 
-                    </a>
+                <div class="servicios-boton">
+                    <a href="../contacto.html" class="">Hablemos</a>
                 </div>
-            </div>
-            <div class="seccion-img">
-                <img src="../LOGO/PNG/2.png" alt="">
             </div>
         </div>
+    </section>
 
-        <div class="carousel">
-            <div class="carousel-track">
-                <div class="carousel-slide">
-                    <div class="content">
-                        <h2>Título 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem voluptates iusto dolor 
-                            soluta, ipsa cumque cupiditate odit quae nihil ipsam dolorem, esse possimus, repellat 
-                            recusandae fuga sunt iure cum?.</p>
-                    </div>
-                    <img src="../LOGO/PNG/2.png" alt="Imagen 1">
-                </div>
-                <div class="carousel-slide">
-                    <div class="content">
-                        <h2>Título 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem voluptates iusto dolor 
-                            soluta, ipsa cumque cupiditate odit quae nihil ipsam dolorem, esse possimus, repellat 
-                            recusandae fuga sunt iure cum?.</p>
-                    </div>
-                    <img src="../LOGO/PNG/2.png" alt="Imagen 1">
-                </div>
-                <div class="carousel-slide">
-                    <div class="content">
-                        <h2>Título 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem voluptates iusto dolor 
-                            soluta, ipsa cumque cupiditate odit quae nihil ipsam dolorem, esse possimus, repellat 
-                            recusandae fuga sunt iure cum?.</p>
-                    </div>
-                    <img src="../LOGO/PNG/2.png" alt="Imagen 1">
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-button prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M13 15l-3 -3l3 -3"></path> <path d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z"></path> </svg> 
-                </button>
-                <button class="carousel-button next">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M11 9l3 3l-3 3"></path> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z"></path> </svg> 
-                </button>
-            </div>
+    <main>
+        <div class="contenido">
+            <h2>
+                Marcas que han confiado en nuestra experiencia digital!
+            </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias 
+                quaerat unde officia, nesciunt earum rerum obcaecati recusandae hic incidunt corrupti 
+                reprehenderit cupiditate enim doloribus optio, quia minus aut dolorem?
+                qui saepe quas unde distinctio. Eius, dignissimos dicta?
+            </p>
         </div>
+        <div class="slider">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
 
-        <div class="ventajas">
-            <div class="ventajas-titulo">
-                <h2 >
-                    Ventajas del diseño UX
-                </h2>
-            </div>
-            <div class="ventajas-texto">
-                <div class="ventajas-icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M9 12l2 2l4 -4"></path> </svg> 
-                    <span class="">
-                        
-                        Lorem, ipsum dolor.
-                    </span>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
                 </div>
-                <div class="ventajas-icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M9 12l2 2l4 -4"></path> </svg> 
-                    <span class="">
-                        
-                        Lorem, ipsum dolor.
-                    </span>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
                 </div>
-                <div class="ventajas-icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M9 12l2 2l4 -4"></path> </svg> 
-                    <span class="">
-                        
-                        Lorem, ipsum dolor.
-                    </span>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
                 </div>
-                <div class="ventajas-icono">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M9 12l2 2l4 -4"></path> </svg> 
-                    <span class="">
-                        
-                        Lorem, ipsum dolor.
-                    </span>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../LOGO/PNG/1.PNG" alt="">
                 </div>
             </div>
         </div>
 
-        <section class="imagen_contacto">
-            <span>
-                Hablemos
-            </span>
-            <h4>De tu nuevo proyecto</h4>
-            <p class="p">Llena el formulario y un asesor se pondrá en contacto contigo</p>
-            
-            <div class="boton-contenido nosotros-boton">
-                <a href="#" class="boton"> 
-                    <h5>Contactanos</h5> 
+        <div class="casos">
+            <h2>Casos de éxito</h2>
+            <div class="casos-contenido">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, exercitationem?
+                    Lorem ipsum dolor sit amet, 
+                </p>
+    
+                <div class="boton-casos">
+                    <a href="#">Ver todos los proyectos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../LOGO/IMG/kenny-eliason-I6wCDYW6ij8-unsplash.jpg" alt="Card image" class="card-image">
+                            <h3>Fulana Empresa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../LOGO/IMG/kenny-eliason-I6wCDYW6ij8-unsplash.jpg" alt="Card image" class="card-image">
+                            <h3>Fulana Empresa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../LOGO/IMG/kenny-eliason-I6wCDYW6ij8-unsplash.jpg" alt="Card image" class="card-image">
+                            <h3>Fulana Empresa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../LOGO/IMG/kenny-eliason-I6wCDYW6ij8-unsplash.jpg" alt="Card image" class="card-image">
+                            <h3>Fulana Empresa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../LOGO/IMG/kenny-eliason-I6wCDYW6ij8-unsplash.jpg" alt="Card image" class="card-image">
+                        </a>
+                        <h3>Fulana Empresa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ea.
+                        </p>
+                    </li>
+                </ul>
+    
+                <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="servicios">
+            <h2>Otros servicios</h2>
+            <div class="otros-servicios">
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+                <div class="servicios-contenido">
+                    <h3>Impulso de Redes Sociales</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
+                        fugiat sequi minus cumque perspiciatis dolor sapiente? Placeat accusamus tempore hic 
+                        deserunt quo blanditiis accusantium atque alias? Dicta quas explicabo esse!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactanos">
+            <h2>¿Listo para llevar tu marca al siguiente nivel?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <div class="contactanos-boton">
+                <a href="../contacto.html">Hablemos</a>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer" >
+        <div class="footer-items">
+            <figure class="footer-figure">
+                <a href="index.html">
+                    <img src="../LOGO/PNG/1.PNG" alt="Logo de la pagina" class="logo-footer" >
+                </a>
+            </figure>
+            <div class="footer-menu">
+                <div class="footer-menu-items"> 
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="portafolio.html">Portafolio</a>
+                </div>
+                <div class="footer-menu-boton">
+                    <a href="contacto.html">Contáctanos</a>
+                </div>
+            </div>
+            <!-- <div class="footer-contactos">
+                <a href="#" class="contacto">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAlVJREFUWEftV0FOXTEMHF+CLltOAmy5QFU2wJpDUO7QPbDrASpVQkjAIVjzOYn5I9mVlWe/hJKqLIiE/kc/ccZje+wI3tmSd4YHH4B6ERlmSFW/mLF9AP69Z38DYCMi972N/nsXkKoSwDkAfr5lEdy1iHxfM1ICMkYuCyA0PrIyJsnWqYikNtYA3QUwNHK9/f++MlShM8fI7nG0JyIH2ZkUkKqeACA7XBc9mkeoMmC0y/BzkaWr9mwF6MkSl4ykngyC4NkjAJ8A/AJwY46SMSb77iggXfNiBAz3qOoZgB+2/7eIHEb2ZUt9F1ATrt21nFFVVsxnY5MJzFx78FCo6lcAP+1SVtiJVS3zk+uglYQFwp4H5jkvryqQW1hBvGyjqt8A7AB4FJFbyyWmRJqfGSB6zcRLY9x46JezAp0p1yuCYuIuRFG31M4EFOVgUYEWRq+kyqk5gJr8WsTfE7TZtyjvaQypKvOGWpJ6HitGVZ3JhXTMBOT6dCUip2vlH0K3AD8TkHvdVe81Nv8FoK6Cq2rJ5kxAscelvch0anXfTEBRENP5pqmwlMlpgIJKu9K6MFL8nm3EiDNQKg2vBeR0l6Vt8s8Er0bZUqXNqbJ5Z62D0u/Nr2yuYfDaa5rr89r81LSeRR5mgOi1h6RU49ERpN3XmyaqAa1U2b8FEtrKn144NA8lZdsVwVGQQSx5ZHyENVCxqzNJL177xgpV+bYhPxiKQ3kkYuQZVFZgNku78ZGHIgc2VtL/fSgm1UGP499o6lCt5z2lR2+dta8bslkXjdr5ANRj6gVPnos0mk3jawAAAABJRU5ErkJggg=="/>
+                </a>
+                <a href="#" class="contacto">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAARZJREFUWEftmOsNwjAMhH2TQDeBTWASYBLYBDahmxwYJSi4EQl9pRKx1F9Nk4/zObKBLCywMB6pQKmMRBUiuRaRXerjge9bABe7RweIpIKcBx6W+/kWwC1cHAM6isghd8eB604A9Lx3/BVQ+/Shf1QB9aV/vCKzKKQQe+sNJSCp3gyLZRagBoBCdaIEkCrTKWVPVgLoQ53gPls5qI3z0TwewrOGwzxFFLFpnNRDevM2BuhuFKlAxRX6WlU2PyRtCkf30K9ANJDlgNwVoAqFURQo1taMDhT+2lr2qV6sKlQVeilAsm+TXz1UzEPa1V1Tp0fe90lZ1qCoo4ptNXP4OqOxm4J1v1jkjdI5J0+5pv4dk1J3cQo9AE3kAjSciJ9jAAAAAElFTkSuQmCC"/>
+                </a>
+            </div> -->
+        </div>
+        <div class="footer-condiciones">
+            <div>
+                <p class="copyright">&copy; 2025 BrandBoost | Todos los derechos Reservados</p>
+            </div>
+
+            <div>
+                <a href="condiciones.html">
+                    <h5>Terminos y condiciones</h5>
                 </a>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <figure class="nav-figure">
-            <a href="../index.html">
-                <img src="../LOGO/PNG/1.PNG" alt="Logo de la pagina" class="nav-logo" >
-            </a>
-        </figure>
-    </footer>
 
-    <!--Ajustes del header-->
-    <script src="../JS/ajustes-header.js"></script>
-    <!-- Carrucel -->
-    <script src="../JS/impulso.carrucel.js"></script>
+            <div class="footer-contactos">
+                <a href="#" class="contacto">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAlVJREFUWEftV0FOXTEMHF+CLltOAmy5QFU2wJpDUO7QPbDrASpVQkjAIVjzOYn5I9mVlWe/hJKqLIiE/kc/ccZje+wI3tmSd4YHH4B6ERlmSFW/mLF9AP69Z38DYCMi972N/nsXkKoSwDkAfr5lEdy1iHxfM1ICMkYuCyA0PrIyJsnWqYikNtYA3QUwNHK9/f++MlShM8fI7nG0JyIH2ZkUkKqeACA7XBc9mkeoMmC0y/BzkaWr9mwF6MkSl4ykngyC4NkjAJ8A/AJwY46SMSb77iggXfNiBAz3qOoZgB+2/7eIHEb2ZUt9F1ATrt21nFFVVsxnY5MJzFx78FCo6lcAP+1SVtiJVS3zk+uglYQFwp4H5jkvryqQW1hBvGyjqt8A7AB4FJFbyyWmRJqfGSB6zcRLY9x46JezAp0p1yuCYuIuRFG31M4EFOVgUYEWRq+kyqk5gJr8WsTfE7TZtyjvaQypKvOGWpJ6HitGVZ3JhXTMBOT6dCUip2vlH0K3AD8TkHvdVe81Nv8FoK6Cq2rJ5kxAscelvch0anXfTEBRENP5pqmwlMlpgIJKu9K6MFL8nm3EiDNQKg2vBeR0l6Vt8s8Er0bZUqXNqbJ5Z62D0u/Nr2yuYfDaa5rr89r81LSeRR5mgOi1h6RU49ERpN3XmyaqAa1U2b8FEtrKn144NA8lZdsVwVGQQSx5ZHyENVCxqzNJL177xgpV+bYhPxiKQ3kkYuQZVFZgNku78ZGHIgc2VtL/fSgm1UGP499o6lCt5z2lR2+dta8bslkXjdr5ANRj6gVPnos0mk3jawAAAABJRU5ErkJggg=="/>
+                </a>
+                <a href="#" class="contacto">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAARZJREFUWEftmOsNwjAMhH2TQDeBTWASYBLYBDahmxwYJSi4EQl9pRKx1F9Nk4/zObKBLCywMB6pQKmMRBUiuRaRXerjge9bABe7RweIpIKcBx6W+/kWwC1cHAM6isghd8eB604A9Lx3/BVQ+/Shf1QB9aV/vCKzKKQQe+sNJSCp3gyLZRagBoBCdaIEkCrTKWVPVgLoQ53gPls5qI3z0TwewrOGwzxFFLFpnNRDevM2BuhuFKlAxRX6WlU2PyRtCkf30K9ANJDlgNwVoAqFURQo1taMDhT+2lr2qV6sKlQVeilAsm+TXz1UzEPa1V1Tp0fe90lZ1qCoo4ptNXP4OqOxm4J1v1jkjdI5J0+5pv4dk1J3cQo9AE3kAjSciJ9jAAAAAElFTkSuQmCC"/>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="../JS/menu.js"></script>
+    <!-- link SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- link SwiperJS JS -->
+    <script src="../JS/swiper.js"></script>
     
 </body>
 </html>

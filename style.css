@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -240,7 +241,7 @@ body.menu-open {
     color: #fff;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 4.5vw;
+    font-size: 5vw;
 }
 .carousel-titulos p {
     width: 948px;
@@ -257,7 +258,7 @@ body.menu-open {
 }
 
 .especial {
-    font-size: 4.5vw;
+    font-size: 5vw;
     color: transparent;
     -webkit-text-stroke: 1px #FFDD00; /* Borde amarillo */
     -webkit-background-clip: text;
@@ -561,7 +562,7 @@ body.menu-open {
 }
 
 .imagen_contacto {
-    background-image: url('LOGO/PNG/image.png');
+    background-image: url('SRC/logos/image.webp');
 }
 .imagen_contacto {
     

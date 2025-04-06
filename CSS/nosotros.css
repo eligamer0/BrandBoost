@@ -15,6 +15,13 @@ body {
     font-family: "Poppins", serif;
 }
 
+h1 {
+    font-size: 50px;
+    color: #FFDD00;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+}
 h2 {
     font-size: 20px;
     font-weight: 500;
@@ -35,7 +42,7 @@ p {
     line-height: 2;
     color: #888;
 }
-.servicio-titulo {
+.nosotros-titulo {
     width: 100%;
     height: 280px;
     display: flex;

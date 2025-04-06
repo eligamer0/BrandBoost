@@ -16,24 +16,28 @@ body {
 }
 
 
+header {
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+    background-color: #000;
+}
 
 .titulo {
     position: absolute;
-    line-height: 1.2;
+    line-height: 1.5;
     overflow: hidden;
     white-space: normal;
     transform: translate(-50%, -50%);
     width: 80%; /* Ajusta el ancho de manera responsiva */
-    box-sizing: border-box;
+    max-width: 1070px;
     top: 70%;
     left: 46%;
 }
-.titulo br {
-    display: none;
-}
 
 .titulo h1 {
-    padding-right: 1ch; /* Espacio después del texto */
     color: #fff;
     font-family: Poppins;
     font-weight: 700;
@@ -41,7 +45,7 @@ body {
 }
 
 .titulo h1 span {
-    display: inline; /* Permite que las palabras se ajusten automáticamente */
+    display: inline-block;
     opacity: 0;
     transform: translateY(30px);
     animation: typewave 0.6s ease-in-out forwards;
@@ -52,7 +56,7 @@ body {
     animation-delay: calc(var(--n) * 0.06s);
 }
 
-/* Estilo especial para ", o hablar de una idea" */
+  /* Estilo especial para ", o hablar de una idea" */
 .especial {
     font-size: 4.5vw;
     color: transparent;
@@ -239,13 +243,20 @@ textarea {
         gap: 20px;
     }
 
-    .titulo h1 {
+
+    .titulos h1 {
         font-size: 36px; /* Texto más pequeño */
         padding-right: 0%;
     }
     .especial {
         font-size: 36px; /* Ajustar tamaño para móviles */
         -webkit-text-stroke: 1px #FFDD00; /* Mantiene el borde amarillo */
+    }
+    .titulos h1 span {
+        transform: translateY(20px); /* Ajuste menor en la animación */
+    }
+    .titulos h1 span:nth-child(n) {
+        animation-delay: calc(var(--n) * 0.05s); /* Animación más rápida */
     }
 
     .informaciones {
@@ -295,15 +306,11 @@ textarea {
 
 @media (max-width: 480px) {
     .titulo h1 {
-        font-size: 35px; /* Texto más pequeño */
-        padding-right: 0%;
-    }
-    .especial {
-        font-size: 35px; /* Ajustar tamaño para móviles */
+        font-size: 40px;
     }
 
-    .titulo br {
-        display: none;
+    .titulo {
+        font-size: 1.2rem;
     }
 
     .informaciones-informacion h2 {
