@@ -25,7 +25,7 @@ body {
     padding: 100px 60px;
 }
 .produccion-fondo {
-    background-image: url('../LOGO/IMG/706fb9a3b3f5faa53e601af48c965864.jpeg');
+    background-image: url('../SRC/img/706fb9a3b3f5faa53e601af48c965864.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -67,14 +67,53 @@ body {
     font-size: 16px;
     color: #fff;
 }
-.servicios-boton a {
+
+
+.btn-sweep-to-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
+    font-size: 16px;
     border-radius: 30px;
+    color: #fff;
+    background-color: #000;
+
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    z-index: 1;
+    overflow: hidden;
 }
-.servicios-boton a:hover {
-    background-color: #5372F0;
+  
+.btn-sweep-to-right::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
+  
+.btn-sweep-to-right:hover,
+.btn-sweep-to-right:focus,
+.btn-sweep-to-right:active {
+    color: white;
+}
+  
+.btn-sweep-to-right:hover::before,
+.btn-sweep-to-right:focus::before,
+.btn-sweep-to-right:active::before {
+    transform: scaleX(1);
+}
+  
 
 /* main  */
 
