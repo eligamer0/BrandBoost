@@ -66,14 +66,14 @@
   
 
 .btn-sweep-to-right {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 300;
     border-radius: 30px;
-    color: #fff;
+    color: #fff; */
 
     position: relative;
     transition-property: color;

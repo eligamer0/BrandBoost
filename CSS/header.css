@@ -136,11 +136,11 @@ body.menu-open {
 /* Media queries generales para dispositivos móviles */
 @media (max-width: 768px) {
     /* Header */
-    header {
-        height: 60vh; /* Reduce la altura del header */
+    /* header {
+        height: 60vh; 
         padding: 20px;
         background-color: #000;
-    }
+    } */
     .nav {
         display: flex;
         flex-direction: column;

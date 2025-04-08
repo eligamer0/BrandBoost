@@ -652,11 +652,12 @@ body.menu-open {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 18px;
     font-weight: 300;
     border-radius: 30px;
     color: #fff;
+    gap: 5px;
 
     position: relative;
     transition-property: color;
