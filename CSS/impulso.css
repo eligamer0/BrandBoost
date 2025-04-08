@@ -444,8 +444,8 @@ body {
     .fondo {
         height: auto;
         width: 200px;
-        left: 65%;
-        top: 185%;
+        left: 60%;
+        top: 225%;
     }
 }
 
@@ -472,10 +472,7 @@ body {
         padding: 20px;
     }
     .fondo {
-        height: auto;
-        width: 200px;
-        left: 65%;
-        top: 170%;
+        display: none;
     }
     
 }

@@ -84,6 +84,7 @@ header {
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 30px;
+    padding-top: 3rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -189,7 +190,7 @@ header {
 .formulario {
     width: 100%;
     max-width: 600px;
-    margin: 50px 0;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
