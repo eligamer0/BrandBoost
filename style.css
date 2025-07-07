@@ -761,6 +761,9 @@ body.menu-open {
 
 /* Media queries generales para dispositivos móviles */
 @media (max-width: 768px) {
+    body {
+    box-sizing: border-box;
+    }
     /* Header */
     header {
         height: 60vh; /* Reduce la altura del header */
@@ -887,6 +890,10 @@ body.menu-open {
 
 /* Media queries para pantallas aún más pequeñas (por ejemplo, teléfonos muy pequeños) */
 @media (max-width: 480px) {
+    body {
+    box-sizing: border-box;
+    }
+
     .button-menu {
         width: 2.5rem;
     }
