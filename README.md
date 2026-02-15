@@ -27,7 +27,7 @@ El objetivo principal fue mostrar mi dominio en transiciones, efectos visuales y
 
 ## 🖼️ Demo en vivo
 
-👉 [Ver BrandBoost en Netlify](gorgeous-otter-27481f.netlify.app)  
+👉 [Ver BrandBoost en Netlify](https://gorgeous-otter-27481f.netlify.app/)  
 
 ---
 
